@@ -88,7 +88,7 @@ def validate_plugin(expected_version: str | None) -> str:
     entry = entries[0]
     source = entry.get("source", {})
     require(source.get("source") == "url", "marketplace must install Gridgeist from a Git URL")
-    require(source.get("url") == "https://github.com/ohmiler/gridgeist.git", "marketplace Git URL is unexpected")
+    require(source.get("url") == "https://github.com/devmonstr/gridgeist.git", "marketplace Git URL is unexpected")
     require(source.get("ref") == f"v{version}", "marketplace ref must match plugin version")
     require(entry.get("policy", {}).get("installation") == "AVAILABLE", "marketplace installation policy must be AVAILABLE")
     require(entry.get("policy", {}).get("authentication") == "ON_INSTALL", "marketplace authentication policy must be ON_INSTALL")
@@ -99,7 +99,7 @@ def validate_plugin(expected_version: str | None) -> str:
 
     changelog = read_text("CHANGELOG.md")
     require(f"## [{version}]" in changelog, f"CHANGELOG.md needs a {version} release section")
-    require(f"[{version}]: https://github.com/ohmiler/gridgeist/compare/" in changelog, f"CHANGELOG.md needs a {version} comparison link")
+    require(f"[{version}]: https://github.com/devmonstr/gridgeist/compare/" in changelog, f"CHANGELOG.md needs a {version} comparison link")
     return version
 
 
@@ -124,12 +124,12 @@ def validate_installation_paths() -> None:
     for path in ("README.md", "README.th.md"):
         content = read_text(path)
         positions = [
-            content.find("codex plugin marketplace add ohmiler/gridgeist"),
-            content.find("npx skills add ohmiler/gridgeist -g"),
+            content.find("npx skills add devmonstr/gridgeist -g"),
+            content.find("codex plugin marketplace add devmonstr/gridgeist"),
             content.find("Copy-Item -Recurse"),
         ]
         require(all(position >= 0 for position in positions), f"{path} is missing a documented installation path")
-        require(positions == sorted(positions), f"{path} must order Codex, universal, then manual installation")
+        require(positions == sorted(positions), f"{path} must order current fork, tagged Codex, then manual installation")
 
     require("Manual fallback" in read_text("README.md"), "README.md Quickstart must label manual installation as fallback")
 

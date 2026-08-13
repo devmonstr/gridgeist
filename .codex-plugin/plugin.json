@@ -1,13 +1,13 @@
 {
   "name": "gridgeist",
-  "version": "1.2.0",
+  "version": "1.3.0-devmonstr.1",
   "description": "Design, redesign, and review distinctive product-native web interfaces with proportional hierarchy, brand fidelity, and verified behavior.",
   "author": {
-    "name": "Miler",
-    "url": "https://github.com/ohmiler"
+    "name": "devmonstr",
+    "url": "https://github.com/devmonstr"
   },
-  "homepage": "https://ohmiler.github.io/gridgeist/",
-  "repository": "https://github.com/ohmiler/gridgeist",
+  "homepage": "https://github.com/devmonstr/gridgeist",
+  "repository": "https://github.com/devmonstr/gridgeist",
   "license": "MIT",
   "keywords": [
     "web-design",
@@ -21,14 +21,14 @@
     "displayName": "Gridgeist",
     "shortDescription": "Build product-native interfaces with proportional hierarchy.",
     "longDescription": "Gridgeist helps Codex create, redesign, and review responsive web interfaces by adapting structure, proportional typography, imagery, interaction, and product evidence to the established brand.",
-    "developerName": "Miler",
+    "developerName": "devmonstr",
     "category": "Developer Tools",
     "capabilities": [
       "Design",
       "Write",
       "Review"
     ],
-    "websiteURL": "https://ohmiler.github.io/gridgeist/",
+    "websiteURL": "https://github.com/devmonstr/gridgeist",
     "defaultPrompt": [
       "Use $gridgeist to design a distinctive product-native web interface.",
       "Use $gridgeist to redesign this UI while preserving its brand and behavior.",

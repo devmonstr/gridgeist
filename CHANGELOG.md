@@ -5,12 +5,15 @@ All notable changes to Gridgeist are documented here. This project follows
 
 ## [Unreleased]
 
+## [1.3.0-devmonstr.1] - 2026-08-13
+
 ### Added
 
 - Added proportional typography guidance covering role-based heading scale,
   content and language stress, useful viewport context, and earned monumental type.
 - Added paired English and Thai behavioral evaluation coverage for oversized-title
   correction without flattening an established visual identity.
+- Added explicit maintained-fork provenance and a fork-owned release channel.
 
 ### Changed
 
@@ -23,6 +26,8 @@ All notable changes to Gridgeist are documented here. This project follows
 - Rebalanced the public Gridgeist surfaces around a more restrained display scale
   while preserving the rational grid, typography character, palette, rules, and
   evidence-first composition.
+- Moved plugin metadata, installation commands, validation, and release links to
+  `devmonstr/gridgeist`; upstream v1.2.0 remains credited as the fork baseline.
 
 ## [1.2.0] - 2026-07-20
 
@@ -139,7 +144,8 @@ Gridgeist's first stable release.
 - English and Thai documentation and evaluation prompts.
 - Interactive examples and a responsive GitHub Pages website.
 
-[Unreleased]: https://github.com/ohmiler/gridgeist/compare/v1.2.0...HEAD
+[Unreleased]: https://github.com/devmonstr/gridgeist/compare/v1.3.0-devmonstr.1...HEAD
+[1.3.0-devmonstr.1]: https://github.com/devmonstr/gridgeist/compare/1c4aa94...v1.3.0-devmonstr.1
 [1.2.0]: https://github.com/ohmiler/gridgeist/compare/v1.1.2...v1.2.0
 [1.1.2]: https://github.com/ohmiler/gridgeist/compare/v1.1.1...v1.1.2
 [1.1.1]: https://github.com/ohmiler/gridgeist/compare/v1.1.0...v1.1.1

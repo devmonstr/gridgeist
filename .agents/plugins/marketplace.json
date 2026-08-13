@@ -8,8 +8,8 @@
       "name": "gridgeist",
       "source": {
         "source": "url",
-        "url": "https://github.com/ohmiler/gridgeist.git",
-        "ref": "v1.2.0"
+        "url": "https://github.com/devmonstr/gridgeist.git",
+        "ref": "v1.3.0-devmonstr.1"
       },
       "policy": {
         "installation": "AVAILABLE",

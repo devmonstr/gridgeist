@@ -4,5 +4,5 @@ contact_links:
     url: 'https://ohmiler.github.io/gridgeist/examples/'
     about: 'Browse the examples before opening an issue.'
   - name: 'Documentation'
-    url: 'https://github.com/ohmiler/gridgeist#readme'
+    url: 'https://github.com/devmonstr/gridgeist#readme'
     about: 'Read the installation and usage guide.'

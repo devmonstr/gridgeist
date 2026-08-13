@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Install Gridgeist v1.2, align a direction, define a system contract, and verify a product-native interface." />
+    <meta name="description" content="Install the devmonstr Gridgeist fork, align a direction, define a system contract, and verify a product-native interface." />
     <meta name="theme-color" content="#f2f0e9" />
     <title>Docs — Gridgeist</title>
     <link rel="canonical" href="https://ohmiler.github.io/gridgeist/docs/" />
@@ -13,7 +13,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Gridgeist" />
     <meta property="og:title" content="Gridgeist Docs — From product intent to interface system" />
-    <meta property="og:description" content="Installation, direction alignment, system contracts, component grammar, workflow, and verification for Gridgeist v1.2." />
+    <meta property="og:description" content="Installation, proportional hierarchy, system contracts, component grammar, workflow, and verification for the devmonstr Gridgeist fork." />
     <meta property="og:url" content="https://ohmiler.github.io/gridgeist/docs/" />
     <meta property="og:image" content="https://ohmiler.github.io/gridgeist/og-image.png" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -31,17 +31,17 @@
         <a href="../#method">Method</a><a href="../#adaptation">Adaptation</a><a href="../examples/">Examples</a><a href="../updates/">Updates</a><a href="../#install">Install</a>
       </nav>
       <details class="mobile-menu"><summary>Menu</summary><nav aria-label="Mobile navigation"><a aria-current="page" href="./">Docs</a><a href="../#method">Method</a><a href="../#adaptation">Adaptation</a><a href="../examples/">Examples</a><a href="../updates/">Updates</a><a href="../#install">Install</a></nav></details>
-      <div class="header-actions"><a class="header-language" href="../th/docs/" lang="th">ไทย</a><a class="header-github" href="https://github.com/ohmiler/gridgeist">GitHub ↗</a></div>
+      <div class="header-actions"><a class="header-language" href="../th/docs/" lang="th">ไทย</a><a class="header-github" href="https://github.com/devmonstr/gridgeist">GitHub ↗</a></div>
     </header>
 
     <main id="main">
       <section class="docs-hero" aria-labelledby="docs-title">
-        <p class="eyebrow">Field manual / v1.2</p>
+        <p class="eyebrow">Field manual / devmonstr fork</p>
         <div class="docs-hero-mark" aria-hidden="true"><span>GG—DOCS</span><span>READ / DECIDE / VERIFY</span></div>
         <h1 id="docs-title">FROM SIGNAL<br /><span>TO SYSTEM.</span></h1>
         <div class="docs-hero-intro">
           <p>A decision-first guide to creating, redesigning, or reviewing an interface that belongs to its product—not to a house style.</p>
-          <dl><div><dt>VERSION</dt><dd>1.2.0</dd></div><div><dt>ENTRY MODES</dt><dd>03</dd></div><div><dt>LICENSE</dt><dd>MIT</dd></div></dl>
+          <dl><div><dt>VERSION</dt><dd>1.3.0-devmonstr.1</dd></div><div><dt>ENTRY MODES</dt><dd>03</dd></div><div><dt>LICENSE</dt><dd>MIT</dd></div></dl>
         </div>
       </section>
 
@@ -69,9 +69,9 @@ Verify desktop, mobile, keyboard use, and accessibility.</code></pre></div>
           <section id="install" aria-labelledby="install-title">
             <p class="section-label">02 / Install + update</p><h2 id="install-title">Choose the path<br />you can maintain.</h2>
             <div class="install-methods">
-              <article class="install-featured"><div><span>01</span><h3>Codex plugin</h3><small>RECOMMENDED</small></div><p>Add the marketplace, install the plugin, then start a new Codex session.</p><div class="install-command"><pre id="docs-install-codex"><code>codex plugin marketplace add ohmiler/gridgeist
+              <article class="install-featured"><div><span>01</span><h3>Codex plugin</h3><small>AFTER TAG</small></div><p>Add the marketplace, install the plugin, then start a new Codex session.</p><div class="install-command"><pre id="docs-install-codex"><code>codex plugin marketplace add devmonstr/gridgeist
 codex plugin add gridgeist@gridgeist</code></pre><button type="button" data-copy-target="docs-install-codex">Copy</button></div></article>
-              <article><div><span>02</span><h3>Compatible agents</h3><small>UNIVERSAL</small></div><p>Use the open Agent Skills CLI for Claude Code, Cursor, Gemini CLI, Copilot, OpenCode, and other compatible agents.</p><div class="install-command"><pre id="docs-install-skills"><code>npx skills add ohmiler/gridgeist -g</code></pre><button type="button" data-copy-target="docs-install-skills">Copy</button></div></article>
+              <article><div><span>02</span><h3>Compatible agents</h3><small>AVAILABLE NOW</small></div><p>Use the open Agent Skills CLI for Claude Code, Cursor, Gemini CLI, Copilot, OpenCode, and other compatible agents.</p><div class="install-command"><pre id="docs-install-skills"><code>npx skills add devmonstr/gridgeist -g</code></pre><button type="button" data-copy-target="docs-install-skills">Copy</button></div></article>
               <article><div><span>03</span><h3>Manual</h3><small>PORTABLE</small></div><p>Copy <code>skills/gridgeist/</code> into the skills directory used by an agent that supports the Agent Skills <code>SKILL.md</code> convention.</p></article>
               <article><div><span>04</span><h3>Update an existing install</h3><small>EXPLICIT</small></div><p>Gridgeist does not update silently. Refresh and reinstall a Codex plugin, or use the Skills CLI update command, then start a new agent session. Manual copies must be replaced from a tagged release.</p><div class="install-command"><pre id="docs-update"><code>codex plugin marketplace upgrade gridgeist
 codex plugin add gridgeist@gridgeist
@@ -145,7 +145,7 @@ and one coherent replacement direction.</code></pre></details>
           <section id="verify" aria-labelledby="verify-title">
             <p class="section-label">08 / Verification</p><h2 id="verify-title">Evidence before<br />the verdict.</h2>
             <div class="check-grid"><div><span>A</span><h3>Clarity</h3><p>Product, audience, primary task, and next action are obvious.</p></div><div><span>B</span><h3>Hierarchy</h3><p>Dominance comes from role, position, weight, contrast, rhythm, and proportional scale—not an oversized title by default.</p></div><div><span>C</span><h3>Response</h3><p>Mobile is recomposed around priority; headings, code, and tables do not overflow.</p></div><div><span>D</span><h3>States</h3><p>Default, loading, empty, error, success, disabled, and destructive states are considered when applicable.</p></div><div><span>E</span><h3>Access</h3><p>Landmarks, focus, names, contrast, motion, zoom, and keyboard paths are observed.</p></div><div><span>F</span><h3>Integrity</h3><p>Claims name the commands, viewports, flows, limits, and evidence actually observed.</p></div></div>
-            <div class="evidence-strip"><b>6 / 6</b><p><span>FRESH v1.2 SYSTEM-CONTRACT RUNS</span>Scenario 19 implementations passed in English and Thai with independent responsive browser checks. Guardrails were repaired; real-user evidence remains open.</p></div>
+            <div class="evidence-strip"><b>RC / 20</b><p><span>FORK EVALUATION SUITE</span>Upstream Scenario 19 retains its six-run evidence. Fork Scenario 20 adds proportional-title coverage in English and Thai; fresh independent agent runs remain open.</p></div>
           </section>
 
           <section id="limits" aria-labelledby="limits-title">
@@ -157,10 +157,10 @@ and one coherent replacement direction.</code></pre></details>
 
         <aside class="docs-rail" aria-label="Quick reference">
           <p>QUICK REFERENCE</p><dl><div><dt>STRUCTURE</dt><dd>Visible → invisible</dd></div><div><dt>EXPRESSION</dt><dd>Brand-derived</dd></div><div><dt>TOKENS</dt><dd>Foundation → component</dd></div><div><dt>EVIDENCE</dt><dd>Product-native</dd></div><div><dt>STATE</dt><dd>Complete / recoverable</dd></div><div><dt>MOTION</dt><dd>Functional / reduced</dd></div></dl>
-          <a href="https://github.com/ohmiler/gridgeist/blob/main/skills/gridgeist/SKILL.md">Read SKILL.md ↗</a>
+          <a href="https://github.com/devmonstr/gridgeist/blob/main/skills/gridgeist/SKILL.md">Read SKILL.md ↗</a>
         </aside>
       </div>
     </main>
-    <footer><a class="wordmark" href="../">GRIDGEIST®</a><p>Structure interfaces with taste and spirit.</p><p>© 2026 MILER / MIT</p></footer>
+    <footer><a class="wordmark" href="../">GRIDGEIST®</a><p>Structure interfaces with taste and spirit.</p><p>devmonstr fork / original © 2026 Miler / MIT</p></footer>
   </body>
 </html>

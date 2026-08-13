@@ -42,57 +42,72 @@ Or clone it when you want to inspect, modify, or validate the complete repositor
 git clone https://github.com/devmonstr/gridgeist.git
 ```
 
-The versioned Codex marketplace commands below intentionally remain the stable
-upstream channel until this fork publishes its own release tag and marketplace
-entry. This avoids presenting an untagged fork branch as a stable release.
+The fork is preparing **v1.3.0-devmonstr.1**, based on upstream v1.2.0. The
+universal installer uses the current fork directly. The Codex marketplace entry
+becomes installable when the matching fork tag is published; until then, use the
+universal or manual path below.
 
 ## See the difference
 
-This illustrative Northline logistics comparison is rendered from two full HTML/CSS pages with the same product, copy, sample operating data, and viewport. The After page and screenshot were rebuilt with the **Gridgeist v1.2.0** system workflow; Northline and all displayed data are fictional.
+This maintained-fork comparison uses the Northline fixture inherited from upstream
+v1.2.0 so the product, copy, sample data, and viewport remain comparable. The After
+page now reflects the fork's **v1.3.0-devmonstr.1** direction: proportional display
+type, more useful product context above the fold, and the same evidence-led system
+workflow. Northline and all displayed data are fictional.
 
 <table>
   <tr>
     <th width='50%'>Without Gridgeist - generic SaaS</th>
-    <th width='50%'>With Gridgeist v1.2.0 - product-native system</th>
+    <th width='50%'>With the devmonstr fork - proportional system</th>
   </tr>
   <tr>
     <td><img src='docs/assets/northline-before.png' alt='Generic Northline logistics landing page with centered marketing copy, rounded controls, a chart, and interchangeable metric cards' width='100%' /></td>
-    <td><img src='docs/assets/northline-after.png' alt='Gridgeist v1.2.0 Northline concept organized as one operational system with live freight topology, semantic lane states, arrival times, and an explicit priority exception' width='100%' /></td>
+    <td><img src='docs/assets/northline-after.png' alt='Northline concept updated by the devmonstr Gridgeist fork with proportional display type, live freight topology, semantic lane states, arrival times, and a priority exception' width='100%' /></td>
   </tr>
 </table>
 
-Same content and sample operating data; a different design system. Gridgeist turns the topology, route table, exception, actions, and metrics into one connected operational surface built from product evidence, while labeling the concept honestly. Both README images are browser captures of the working pages. [Open the Before page](https://ohmiler.github.io/gridgeist/readme-showcase/?view=before) or [open the v1.2.0 After page](https://ohmiler.github.io/gridgeist/readme-showcase/?view=after&rev=ab77ceb6).
+Same content and sample operating data; a more proportional hierarchy. The fork
+keeps topology, route table, exception, actions, and metrics connected while
+reducing headline dominance so operational context remains visible. Both README
+images are browser captures of pages stored in this repository. Inspect the
+[showcase source](site/readme-showcase/index.html), or compare this fork with the
+[upstream v1.2.0 baseline](https://github.com/ohmiler/gridgeist/tree/v1.2.0).
 
-## What v1.2.0 changes
+## What the devmonstr fork changes
 
-Gridgeist now treats visual decisions as one system, not a sequence of isolated styling choices.
+The fork retains the upstream system-contract workflow and adds tighter constraints
+where the original direction could overuse display scale or blur skill ownership.
 
-| Area | v1.2.0 behavior |
+| Area | v1.3.0-devmonstr.1 behavior |
 | --- | --- |
-| System contract | Defines color, typography, layout, spacing, shape, components, states, media, and motion as one compact direction before implementation. |
-| Semantic roles | Connects foundation tokens to semantic roles and component decisions, so contrast and state relationships remain intentional. |
-| Component grammar | Gives related controls and content shared anatomy, variants, density, states, and content-stress rules instead of styling each instance separately. |
-| Direction safety | When the visual thesis is still broad, offers distinct directions and waits for alignment before committing tokens or editing the interface. |
-| Skill coordination | Names one direction owner when multiple UI skills are active, preventing competing visual systems. |
-| Verification | Checks representative widths, overflow, focus, interaction states, themes, and reduced motion—and limits claims to observed evidence. |
+| Proportional hierarchy | Sizes display, page, section, and component headings from role, content, language, measure, and viewport—not impact alone. |
+| Useful context | Keeps product material or the primary task visible around large headings instead of letting a title consume the screen. |
+| Trigger precision | Invokes Gridgeist when product or visual direction is genuinely in scope, without turning narrow behavioral fixes into redesigns. |
+| Bilingual stress | Adds paired English and Thai evaluation coverage for oversized-title correction while preserving the established identity. |
+| System continuity | Retains upstream semantic roles, component grammar, direction alignment, state coverage, and evidence boundaries. |
+| Verification | Adds proportional-type diagnostics to responsive, overflow, focus, interaction, theme, and reduced-motion review. |
 
-In practice, the result is more coherent, less generic, and easier to extend without losing the product's identity. The v1.2.0 release was exercised through three English and three Thai system-contract scenarios, independent responsive browser checks, and repaired guardrail tests.
+The fork changes are validated locally across 11 routes and four viewport sizes
+(44 route/viewport checks), with zero unintended overflow, console warnings, or
+headings exceeding the recorded viewport threshold. Upstream v1.2.0 evaluation
+history remains available as inherited evidence; the new Scenario 20 is added but
+has not yet been run in isolated agent sessions.
 
 ## 60-second Quickstart
 
 1. Install Gridgeist through the primary channel for your agent.
 
-   For Codex, add the Git marketplace and install the plugin:
+   For the current fork, use the universal installer:
 
    ```powershell
-   codex plugin marketplace add ohmiler/gridgeist
-   codex plugin add gridgeist@gridgeist
+   npx skills add devmonstr/gridgeist -g
    ```
 
-   For Claude Code, Cursor, Gemini CLI, GitHub Copilot, OpenCode, and other compatible agents, use the universal installer:
+   After the `v1.3.0-devmonstr.1` tag is published, Codex can use the fork's Git marketplace:
 
    ```powershell
-   npx skills add ohmiler/gridgeist -g
+   codex plugin marketplace add devmonstr/gridgeist
+   codex plugin add gridgeist@gridgeist
    ```
 
    **Manual fallback:** If neither installer is available, continue to [Manual installation](#manual-installation).
@@ -117,10 +132,11 @@ Agents that support explicit skill invocation can use `$gridgeist` in the prompt
 
 This repository is packaged as a Codex plugin through [`.codex-plugin/plugin.json`](.codex-plugin/plugin.json). The plugin points to the same `skills/gridgeist/` directory used by the other channels, so all installations share one source of truth.
 
-Add the Gridgeist marketplace, then install the plugin:
+After the `v1.3.0-devmonstr.1` tag is published, add the fork marketplace and
+install the plugin:
 
 ```powershell
-codex plugin marketplace add ohmiler/gridgeist
+codex plugin marketplace add devmonstr/gridgeist
 codex plugin add gridgeist@gridgeist
 ```
 
@@ -131,13 +147,13 @@ Start a new Codex session after installation so the bundled skill is discovered.
 For Claude Code, Cursor, Gemini CLI, GitHub Copilot, OpenCode, and other compatible agents, install Gridgeist with the [open agent skills CLI](https://github.com/vercel-labs/skills):
 
 ```powershell
-npx skills add ohmiler/gridgeist -g
+npx skills add devmonstr/gridgeist -g
 ```
 
 The installer discovers `skills/gridgeist/` and prompts you to choose the target agents. To select one directly, pass its agent name; for example:
 
 ```powershell
-npx skills add ohmiler/gridgeist -g -a claude-code
+npx skills add devmonstr/gridgeist -g -a claude-code
 ```
 
 ### Manual installation
@@ -145,7 +161,7 @@ npx skills add ohmiler/gridgeist -g -a claude-code
 Use manual copying only when the plugin and universal installer are unavailable:
 
 ```powershell
-git clone https://github.com/ohmiler/gridgeist.git
+git clone https://github.com/devmonstr/gridgeist.git
 Copy-Item -Recurse .\gridgeist\skills\gridgeist "$HOME\.agents\skills\gridgeist"
 ```
 
@@ -316,7 +332,11 @@ evals/prompts.md       Repeatable manual behavior checks
 docs/                  Design and implementation records
 ```
 
-## Case studies
+## Upstream case studies
+
+The following case studies were created by Miler/ohmiler for the original project.
+They are retained here as upstream evidence, not presented as work created by this
+fork. Fork-specific evidence lives under [`.solodeveling/evidence/`](.solodeveling/evidence/).
 
 [Tracefield](https://ohmiler.github.io/tracefield/) applies Gridgeist to a working developer-observability dashboard. Its [repository](https://github.com/ohmiler/tracefield) preserves the generic baseline, exact prompt, evaluation rubric, tested trace domain, and responsive final interface.
 
@@ -326,7 +346,9 @@ docs/                  Design and implementation records
 
 [Doodlewood](https://ohmiler.github.io/doodlewood/) tests playful interaction design with a fictional, privacy-preserving children's drawing studio. Its [repository](https://github.com/ohmiler/doodlewood) preserves the generic baseline, exact prompt, six-part rubric, local drawing engine, four viewport checks, and explicit limits around child safety and real-user evidence.
 
-Together, the four self-produced case studies cover data-heavy, content-heavy, image-led, and playful interactive surfaces. Further validation should now prioritize independent users, agents, and projects rather than adding another first-party visual category.
+Together, these four upstream studies cover data-heavy, content-heavy, image-led,
+and playful interactive surfaces. The fork's next validation step is independent
+cross-domain testing of its proportional hierarchy changes.
 
 ## Limitations
 

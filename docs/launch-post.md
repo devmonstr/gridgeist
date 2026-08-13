@@ -17,7 +17,7 @@ The Northline images are an illustrative redesign using the same fictional produ
 - Before: หน้า SaaS ทั่วไปที่อ่านได้ แต่ยังไม่สื่อบุคลิกของผลิตภัณฑ์
 - After: โครงสร้างและ visual motif ที่ผูกกับ workflow ของผลิตภัณฑ์มากขึ้น
 
-ลองใช้ได้ที่ https://github.com/ohmiler/gridgeist
+ลองใช้ Fork ได้ที่ https://github.com/devmonstr/gridgeist
 
 ถ้าลองแล้ว ฝากแชร์ screenshot, prompt หรือ repository ผ่าน GitHub Issues ได้เลยครับ ผมอยากเห็นทั้งส่วนที่เวิร์กและส่วนที่ยังต้องปรับ
 
@@ -27,7 +27,7 @@ The Northline images are an illustrative redesign using the same fictional produ
 
 ภาพ Northline นี้ใช้ content และ data ชุดเดียวกัน เพื่อให้เห็นความต่างระหว่างหน้า SaaS ทั่วไปกับงานที่ใช้ grid, typography และ product-native visual motif อย่างตั้งใจ
 
-ลองใช้และแชร์ผลลัพธ์ได้ที่ https://github.com/ohmiler/gridgeist
+ลองใช้ Fork และแชร์ผลลัพธ์ได้ที่ https://github.com/devmonstr/gridgeist
 
 ## English
 
@@ -40,7 +40,7 @@ The Northline comparison uses the same fictional product, content, and data:
 - Before: a usable but generic SaaS presentation
 - After: a structure and visual motif shaped around the product workflow
 
-Try it at https://github.com/ohmiler/gridgeist
+Try the maintained fork at https://github.com/devmonstr/gridgeist
 
 If you use it, share a screenshot, prompt, or repository through GitHub Issues. I would love to see what worked and where the skill still needs improvement.
 
@@ -50,4 +50,4 @@ Introducing **Gridgeist v1.0.0**—an agent skill for creating, redesigning, and
 
 This Northline comparison uses the same content and data to show the difference between a generic SaaS page and one shaped by deliberate grids, typography, and a product-native visual motif.
 
-Try it and share your result: https://github.com/ohmiler/gridgeist
+Try the maintained fork and share your result: https://github.com/devmonstr/gridgeist

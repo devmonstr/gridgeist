@@ -214,8 +214,8 @@ def smoke_skills(source: str, timeout: int) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--channel", choices=("all", "codex", "skills"), default="all")
-    parser.add_argument("--marketplace-source", default="ohmiler/gridgeist")
-    parser.add_argument("--skills-source", default="ohmiler/gridgeist")
+    parser.add_argument("--marketplace-source", default="devmonstr/gridgeist")
+    parser.add_argument("--skills-source", default="devmonstr/gridgeist")
     parser.add_argument("--timeout", type=int, default=180, help="Per-command timeout in seconds")
     args = parser.parse_args()
 

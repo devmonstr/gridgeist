@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="คู่มือ Gridgeist v1.2 สำหรับติดตั้ง กำหนดทิศทาง สร้าง System contract และตรวจ Interface จากหลักฐาน" />
+    <meta name="description" content="คู่มือ Gridgeist fork ของ devmonstr สำหรับติดตั้ง กำหนดทิศทาง สร้าง System contract และตรวจ Interface จากหลักฐาน" />
     <meta name="theme-color" content="#f2f0e9" />
     <title>คู่มือ — Gridgeist</title>
     <link rel="canonical" href="https://ohmiler.github.io/gridgeist/th/docs/" />
@@ -13,7 +13,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Gridgeist" />
     <meta property="og:title" content="คู่มือ Gridgeist — จากเจตนาของผลิตภัณฑ์สู่ระบบ Interface" />
-    <meta property="og:description" content="การติดตั้ง Direction alignment, System contract, Component grammar, ขั้นตอนทำงาน และการตรวจผลลัพธ์ของ Gridgeist v1.2" />
+    <meta property="og:description" content="การติดตั้ง Proportional hierarchy, System contract, Component grammar, Workflow และ Verification สำหรับ Gridgeist fork ของ devmonstr" />
     <meta property="og:url" content="https://ohmiler.github.io/gridgeist/th/docs/" />
     <meta property="og:image" content="https://ohmiler.github.io/gridgeist/og-image.png" />
     <meta property="og:locale" content="th_TH" />
@@ -35,17 +35,17 @@
         <a href="../#start">แนวคิด</a><a href="../#adaptation">การปรับใช้</a><a href="../../examples/">ตัวอย่าง</a><a href="../updates/">อัปเดต</a><a href="../#install">ติดตั้ง</a>
       </nav>
       <details class="mobile-menu"><summary>เมนู</summary><nav aria-label="เมนูมือถือ"><a aria-current="page" href="./">DOCS</a><a href="../#start">แนวคิด</a><a href="../#adaptation">การปรับใช้</a><a href="../../examples/">ตัวอย่าง</a><a href="../updates/">อัปเดต</a><a href="../#install">ติดตั้ง</a></nav></details>
-      <div class="header-actions"><a class="header-language" href="../../docs/" lang="en">EN</a><a class="header-github" href="https://github.com/ohmiler/gridgeist">GitHub ↗</a></div>
+      <div class="header-actions"><a class="header-language" href="../../docs/" lang="en">EN</a><a class="header-github" href="https://github.com/devmonstr/gridgeist">GitHub ↗</a></div>
     </header>
 
     <main id="main">
       <section class="docs-hero" aria-labelledby="docs-title">
-        <p class="eyebrow">คู่มือภาคสนาม / v1.2</p>
+        <p class="eyebrow">คู่มือภาคสนาม / Fork ของ devmonstr</p>
         <div class="docs-hero-mark" aria-hidden="true"><span>GG—DOCS</span><span>อ่าน / ตัดสินใจ / ตรวจสอบ</span></div>
         <h1 id="docs-title">จากสัญญาณ<br /><span>สู่ระบบ.</span></h1>
         <div class="docs-hero-intro">
           <p>คู่มือที่เริ่มจากการตัดสินใจ เพื่อสร้าง ปรับดีไซน์ หรือรีวิว Interface ที่เป็นของผลิตภัณฑ์นั้นจริง ๆ ไม่ใช่ของสไตล์สำเร็จรูป</p>
-          <dl><div><dt>เวอร์ชัน</dt><dd>1.2.0</dd></div><div><dt>รูปแบบงาน</dt><dd>03</dd></div><div><dt>สัญญาอนุญาต</dt><dd>MIT</dd></div></dl>
+          <dl><div><dt>เวอร์ชัน</dt><dd>1.3.0-devmonstr.1</dd></div><div><dt>รูปแบบงาน</dt><dd>03</dd></div><div><dt>สัญญาอนุญาต</dt><dd>MIT</dd></div></dl>
         </div>
       </section>
 
@@ -73,9 +73,9 @@
           <section id="install" aria-labelledby="install-title">
             <p class="section-label">02 / ติดตั้ง + อัปเดต</p><h2 id="install-title">เลือกเส้นทาง<br />ที่คุณดูแลต่อได้.</h2>
             <div class="install-methods">
-              <article class="install-featured"><div><span>01</span><h3>Codex Plugin</h3><small>แนะนำ</small></div><p>เพิ่ม Marketplace ติดตั้ง Plugin แล้วเริ่ม Codex session ใหม่</p><div class="install-command"><pre id="docs-install-codex-th"><code>codex plugin marketplace add ohmiler/gridgeist
+              <article class="install-featured"><div><span>01</span><h3>Codex Plugin</h3><small>หลังเผยแพร่ Tag</small></div><p>เพิ่ม Marketplace ติดตั้ง Plugin แล้วเริ่ม Codex session ใหม่</p><div class="install-command"><pre id="docs-install-codex-th"><code>codex plugin marketplace add devmonstr/gridgeist
 codex plugin add gridgeist@gridgeist</code></pre><button type="button" data-copy-target="docs-install-codex-th" data-copied-label="คัดลอกแล้ว" data-fallback-label="เลือกคำสั่ง">คัดลอก</button></div></article>
-              <article><div><span>02</span><h3>Agent ที่รองรับ</h3><small>UNIVERSAL</small></div><p>ใช้ Agent Skills CLI สำหรับ Claude Code, Cursor, Gemini CLI, Copilot, OpenCode และ Agent อื่นที่รองรับ</p><div class="install-command"><pre id="docs-install-skills-th"><code>npx skills add ohmiler/gridgeist -g</code></pre><button type="button" data-copy-target="docs-install-skills-th" data-copied-label="คัดลอกแล้ว" data-fallback-label="เลือกคำสั่ง">คัดลอก</button></div></article>
+              <article><div><span>02</span><h3>Agent ที่รองรับ</h3><small>ใช้ได้ทันที</small></div><p>ใช้ Agent Skills CLI สำหรับ Claude Code, Cursor, Gemini CLI, Copilot, OpenCode และ Agent อื่นที่รองรับ</p><div class="install-command"><pre id="docs-install-skills-th"><code>npx skills add devmonstr/gridgeist -g</code></pre><button type="button" data-copy-target="docs-install-skills-th" data-copied-label="คัดลอกแล้ว" data-fallback-label="เลือกคำสั่ง">คัดลอก</button></div></article>
               <article><div><span>03</span><h3>ติดตั้งด้วยตนเอง</h3><small>PORTABLE</small></div><p>คัดลอก <code>skills/gridgeist/</code> ไปยัง Skills directory ของ Agent ที่รองรับมาตรฐาน Agent Skills แบบ <code>SKILL.md</code></p></article>
               <article><div><span>04</span><h3>อัปเดตของเดิม</h3><small>สั่งอัปเดต</small></div><p>Gridgeist จะไม่อัปเดตแบบเงียบ ให้ Refresh และติดตั้ง Codex Plugin ซ้ำ หรือใช้คำสั่ง Update ของ Skills CLI แล้วเริ่ม Agent session ใหม่ ส่วนการคัดลอกเองต้องแทนที่จาก Release tag</p><div class="install-command"><pre id="docs-update-th"><code>codex plugin marketplace upgrade gridgeist
 codex plugin add gridgeist@gridgeist
@@ -149,7 +149,7 @@ npx skills update gridgeist -g -y</code></pre><button type="button" data-copy-ta
           <section id="verify" aria-labelledby="verify-title">
             <p class="section-label">08 / ตรวจผลลัพธ์</p><h2 id="verify-title">ใช้หลักฐาน<br />ก่อนตัดสิน.</h2>
             <div class="check-grid"><div><span>A</span><h3>ความชัดเจน</h3><p>ผลิตภัณฑ์ ผู้ใช้ งานหลัก และสิ่งที่ต้องทำต่อเข้าใจได้ทันที</p></div><div><span>B</span><h3>ลำดับ</h3><p>สร้างจุดเด่นด้วยหน้าที่ ตำแหน่ง Weight, Contrast, Rhythm และ Scale ที่ได้สัดส่วน ไม่ใช้หัวข้อขนาดใหญ่เป็นค่าเริ่มต้น</p></div><div><span>C</span><h3>การตอบสนอง</h3><p>Mobile ถูกจัดใหม่ตามความสำคัญ และหัวข้อ Code กับ Table ไม่ล้นจอ</p></div><div><span>D</span><h3>สถานะ</h3><p>ตรวจ Default, Loading, Empty, Error, Success, Disabled และ Destructive เมื่อเกี่ยวข้อง</p></div><div><span>E</span><h3>การเข้าถึง</h3><p>สังเกต Landmark, Focus, ชื่อ, Contrast, Motion, Zoom และ Keyboard path</p></div><div><span>F</span><h3>ความซื่อตรง</h3><p>ระบุคำสั่ง Viewport, Flow, ข้อจำกัด และหลักฐานที่ตรวจจริง</p></div></div>
-            <div class="evidence-strip"><b>6 / 6</b><p><span>รอบ SYSTEM-CONTRACT ใหม่ของ v1.2</span>Implementation ของ Scenario 19 ผ่านทั้งภาษาไทยและอังกฤษ พร้อมการตรวจ Responsive ด้วย Browser แบบอิสระ Guardrail ได้รับการซ่อมแล้ว ส่วนหลักฐานจากผู้ใช้จริงยังเป็นงานต่อไป</p></div>
+            <div class="evidence-strip"><b>RC / 20</b><p><span>ชุดประเมินของ FORK</span>Scenario 19 ยังคงหลักฐาน 6 รอบจาก upstream ส่วน Scenario 20 ของ Fork เพิ่มการตรวจสัดส่วนหัวข้อทั้งไทยและอังกฤษ โดย Independent agent run ยังเป็นงานถัดไป</p></div>
           </section>
 
           <section id="limits" aria-labelledby="limits-title">
@@ -161,10 +161,10 @@ npx skills update gridgeist -g -y</code></pre><button type="button" data-copy-ta
 
         <aside class="docs-rail" aria-label="ข้อมูลอ้างอิงย่อ">
           <p>ข้อมูลอ้างอิงย่อ</p><dl><div><dt>โครงสร้าง</dt><dd>มองเห็น → มองไม่เห็น</dd></div><div><dt>การแสดงออก</dt><dd>มาจากแบรนด์</dd></div><div><dt>Token</dt><dd>Foundation → Component</dd></div><div><dt>หลักฐาน</dt><dd>Product-native</dd></div><div><dt>สถานะ</dt><dd>ครบ / กู้คืนได้</dd></div><div><dt>การเคลื่อนไหว</dt><dd>ตามหน้าที่ / ลดได้</dd></div></dl>
-          <a href="https://github.com/ohmiler/gridgeist/blob/main/skills/gridgeist/SKILL.md">อ่าน SKILL.md ↗</a>
+          <a href="https://github.com/devmonstr/gridgeist/blob/main/skills/gridgeist/SKILL.md">อ่าน SKILL.md ↗</a>
         </aside>
       </div>
     </main>
-    <footer><a class="wordmark" href="../../">GRIDGEIST®</a><p>ออกแบบอย่างมีระบบและมีจิตวิญญาณ</p><p>© 2026 MILER / MIT</p></footer>
+    <footer><a class="wordmark" href="../../">GRIDGEIST®</a><p>ออกแบบอย่างมีระบบและมีจิตวิญญาณ</p><p>Fork โดย devmonstr / ต้นฉบับ © 2026 Miler / MIT</p></footer>
   </body>
 </html>

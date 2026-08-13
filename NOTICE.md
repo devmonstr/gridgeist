@@ -8,6 +8,7 @@ This repository is a maintained fork of
 - Maintained fork and subsequent modifications:
   [devmonstr](https://github.com/devmonstr)
 - Fork repository: [devmonstr/gridgeist](https://github.com/devmonstr/gridgeist)
+- Fork release line: `1.3.0-devmonstr.x`, based on upstream `1.2.0`
 - License: [MIT](LICENSE)
 
 The original copyright and license notice are preserved in `LICENSE`. Fork-specific

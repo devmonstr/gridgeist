@@ -112,20 +112,20 @@
 
       <section class="thai-practice reveal" aria-labelledby="practice-title"><p class="section-label">07 / หลักปฏิบัติ</p><h2 id="practice-title">ให้ Agent เห็น<br />ของจริง.</h2><div><p>เปิด Repository และหน้าเว็บที่ Render แล้ว</p><p>ระบุ Behavior ที่ห้ามเปลี่ยนเมื่อ Redesign</p><p>ใช้ข้อมูล โค้ด และ Workflow ของผลิตภัณฑ์จริง</p><p>ตรวจหลาย Viewport และ Interaction state</p></div></section>
 
-      <section class="proof thai-proof reveal" aria-labelledby="proof-title"><p class="section-label">08 / หลักฐานการประเมิน</p><div class="proof-number">19</div><div class="proof-copy"><h2 id="proof-title">สิบเก้าสถานการณ์.<br />หกรอบระบบ.</h2><p>ชุดที่เผยแพร่ครอบคลุม Create, Redesign, Review, การปรับตามแบรนด์, Direction alignment, State recovery, Accessibility, ความซื่อตรงของหลักฐาน, Companion ownership และ Design-system coherence</p><p class="proof-note"><b>6 / 6</b> Implementation ของ Scenario 19 สำหรับ v1.2 ผ่านทั้งภาษาไทยและอังกฤษ พร้อมการตรวจ Responsive ด้วย Browser แบบอิสระ Guardrail ได้รับการซ่อมแล้ว ส่วนหลักฐานจากผู้ใช้จริงยังเป็นงานต่อไป</p><a href="https://github.com/ohmiler/gridgeist/blob/main/evals/prompts.th.md">อ่านชุดประเมิน ↗</a></div></section>
+      <section class="proof thai-proof reveal" aria-labelledby="proof-title"><p class="section-label">08 / หลักฐานการประเมิน</p><div class="proof-number">20</div><div class="proof-copy"><h2 id="proof-title">ยี่สิบสถานการณ์.<br />หลักฐานสองภาษา.</h2><p>ชุดปัจจุบันครอบคลุม Create, Redesign, Review, การปรับตามแบรนด์, Direction alignment, State recovery, Accessibility, ความซื่อตรงของหลักฐาน, Companion ownership, Design-system coherence และ Proportional typography</p><p class="proof-note"><b>FORK / RC</b> Scenario 20 เพิ่มการตรวจแก้หัวข้อใหญ่เกินไปทั้งภาษาไทยและอังกฤษ โดยยังไม่อ้างว่าได้ผ่าน Independent agent run จนกว่าจะมีหลักฐานจริง</p><a href="https://github.com/devmonstr/gridgeist/blob/main/evals/prompts.th.md">อ่านชุดประเมิน ↗</a></div></section>
 
       <section class="install reveal" id="install" aria-labelledby="install-title">
         <p class="section-label section-label-light">09 / ติดตั้งและอัปเดต</p><h2 id="install-title">ติดตั้งครั้งเดียว<br />อัปเดตอย่างตั้งใจ.</h2>
         <div class="install-grid">
-          <article class="install-primary"><div><span>01 / CODEX PLUGIN</span><small>แนะนำ</small></div><p>เพิ่ม Marketplace ติดตั้ง Plugin จาก Release tag แล้วเริ่ม Codex session ใหม่</p><div class="command-line"><code id="install-codex-th">codex plugin marketplace add ohmiler/gridgeist
+          <article class="install-primary"><div><span>01 / CODEX PLUGIN</span><small>หลังเผยแพร่ Tag</small></div><p>เพิ่ม Marketplace ติดตั้ง Plugin จาก Release tag แล้วเริ่ม Codex session ใหม่</p><div class="command-line"><code id="install-codex-th">codex plugin marketplace add devmonstr/gridgeist
 codex plugin add gridgeist@gridgeist</code><button type="button" class="copy-button" data-copy-target="install-codex-th" data-copied-label="คัดลอกแล้ว" data-fallback-label="เลือกคำสั่ง">คัดลอก</button></div></article>
-          <article><div><span>02 / AGENT SKILLS</span><small>ใช้ได้ทั่วไป</small></div><p>ติดตั้งแบบ Global สำหรับ Agent ที่รองรับ</p><div class="command-line command-line-small"><code id="install-skills-th">npx skills add ohmiler/gridgeist -g</code><button type="button" class="copy-button" data-copy-target="install-skills-th" data-copied-label="คัดลอกแล้ว" data-fallback-label="เลือกคำสั่ง">คัดลอก</button></div></article>
+          <article><div><span>02 / AGENT SKILLS</span><small>ใช้ได้ทันที</small></div><p>ติดตั้ง Fork แบบ Global สำหรับ Agent ที่รองรับ</p><div class="command-line command-line-small"><code id="install-skills-th">npx skills add devmonstr/gridgeist -g</code><button type="button" class="copy-button" data-copy-target="install-skills-th" data-copied-label="คัดลอกแล้ว" data-fallback-label="เลือกคำสั่ง">คัดลอก</button></div></article>
           <article><div><span>03 / UPDATE</span><small>สั่งเอง</small></div><p>Refresh Marketplace หรืออัปเดต Agent Skills โดยไม่มีการอัปเดตเบื้องหลัง</p><div class="command-line command-line-small"><code id="update-skill-th">codex plugin marketplace upgrade gridgeist
 npx skills update gridgeist -g -y</code><button type="button" class="copy-button" data-copy-target="update-skill-th" data-copied-label="คัดลอกแล้ว" data-fallback-label="เลือกคำสั่ง">คัดลอก</button></div></article>
         </div>
         <div class="install-actions"><a class="button button-light" href="./docs/#install">อ่านวิธีติดตั้ง <span>↗</span></a><p>Tagged releases<br />MIT License</p></div>
       </section>
     </main>
-    <footer><a class="wordmark" href="../">GRIDGEIST®</a><p>ออกแบบอย่างมีระบบและมีจิตวิญญาณ</p><p>© 2026 MILER / MIT</p></footer>
+    <footer><a class="wordmark" href="../">GRIDGEIST®</a><p>ออกแบบอย่างมีระบบและมีจิตวิญญาณ</p><p>Fork โดย devmonstr / ต้นฉบับ © 2026 Miler / MIT</p></footer>
   </body>
 </html>

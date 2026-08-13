@@ -4,9 +4,9 @@ solodeveling_schema: 1
 
 # State
 
-- **Goal:** Keep Gridgeist recognizable and evidence-driven while making typography hierarchy proportional to product tasks, content, language, and viewport constraints.
-- **Progress:** Commit `82cec8f` publishes proportional typography guidance, paired English/Thai Scenario 20 coverage, aligned metadata and docs, and a restrained public-site heading scale to `devmonstr/gridgeist` on `main`. Forty-four local route/viewport checks plus interaction and repository gates passed. README/NOTICE present devmonstr as fork maintainer with visible Miler/ohmiler attribution, and the live GitHub About identifies the repository as a maintained fork. Local, Git remote, and GitHub API SHAs matched after push.
+- **Goal:** Publish a clearly identified devmonstr release line while preserving upstream authorship, history, and evidence boundaries.
+- **Progress:** The local release candidate is now `1.3.0-devmonstr.1`, based on upstream v1.2.0. README content from the comparison onward, plugin and marketplace metadata, installation paths, current public-site surfaces, and the Northline After capture now belong to the fork while inherited case studies are labeled as upstream evidence. Browser QA passed for the showcase interaction and English/Thai Docs at 1440×900 and 360×800 with no horizontal overflow or console warnings/errors.
 - **Active work:** None.
 - **Blockers:** None.
-- **Current risks:** Fresh-agent behavior remains nondeterministic; Scenario 20 has not run in isolated sessions; real 200% browser zoom was not available in the connected QA environment; no release tag, marketplace publication, site deployment, or production browser verification was performed for this change; the fork has no remote release tags or stable marketplace entry of its own.
-- **Next action:** Run the deferred cross-domain consistency benchmark before choosing a fork release version and marketplace strategy.
+- **Current risks:** Fresh-agent behavior remains nondeterministic; Scenario 20 has not run in isolated sessions; real 200% browser zoom was not verified; the `v1.3.0-devmonstr.1` tag does not exist remotely, so the fork Codex marketplace path and live install smoke test are not yet available; no commit, push, tag, site deployment, or production browser verification has been performed for this candidate.
+- **Next action:** Review and publish the candidate, then create and verify the matching fork tag before claiming the Codex marketplace channel works.

@@ -41,57 +41,67 @@ npx skills add devmonstr/gridgeist -g
 git clone https://github.com/devmonstr/gridgeist.git
 ```
 
-คำสั่ง Codex Marketplace แบบมี Version ด้านล่างยังชี้ไปยัง Stable upstream
-โดยตั้งใจ จนกว่า Fork นี้จะมี Release tag และ Marketplace entry ของตัวเอง
-เพื่อไม่ทำให้ Branch ที่ยังไม่ได้ Tag ดูเหมือน Stable release
+Fork กำลังเตรียม **v1.3.0-devmonstr.1** ซึ่งต่อยอดจาก upstream v1.2.0
+ตัวติดตั้งแบบ Universal ใช้ Fork ปัจจุบันได้โดยตรง ส่วน Codex Marketplace จะติดตั้งได้
+เมื่อเผยแพร่ Tag ของ Fork ที่ตรงกัน ก่อนถึงจุดนั้นให้ใช้ Universal หรือ Manual path ด้านล่าง
 
 ## เห็นความต่างได้ทันที
 
-ตัวอย่าง Northline Logistics นี้สร้างจากหน้า HTML/CSS แบบเต็มสองเวอร์ชัน โดยใช้ผลิตภัณฑ์ เนื้อหา ข้อมูลปฏิบัติการตัวอย่าง และขนาดหน้าจอชุดเดียวกัน หน้าและภาพ After ถูกสร้างใหม่ด้วย Workflow แบบเป็นระบบของ **Gridgeist v1.2.0** โดย Northline และข้อมูลทั้งหมดเป็นเรื่องสมมติ
+ตัวอย่างนี้ใช้ Northline fixture ที่รับมาจาก upstream v1.2.0 เพื่อให้ผลิตภัณฑ์ เนื้อหา
+ข้อมูลตัวอย่าง และ viewport เปรียบเทียบกันได้ตรง ๆ ส่วนหน้า After สะท้อนทิศทางของ Fork
+**v1.3.0-devmonstr.1** ได้แก่ Display type ที่ได้สัดส่วนขึ้น มี Product context เหนือ fold
+มากขึ้น และยังใช้ System workflow ที่อิงหลักฐาน โดย Northline และข้อมูลทั้งหมดเป็นเรื่องสมมติ
 
 <table>
   <tr>
     <th width='50%'>ไม่ใช้ Gridgeist - Generic SaaS</th>
-    <th width='50%'>ใช้ Gridgeist v1.2.0 - ระบบที่สะท้อนผลิตภัณฑ์</th>
+    <th width='50%'>ใช้ Fork ของ devmonstr - ระบบที่ได้สัดส่วน</th>
   </tr>
   <tr>
     <td><img src='docs/assets/northline-before.png' alt='หน้าเว็บ Northline Logistics แบบ Generic ที่ใช้ข้อความการตลาด กราฟ และการ์ดตัวเลขซึ่งพบได้ทั่วไป' width='100%' /></td>
-    <td><img src='docs/assets/northline-after.png' alt='ตัวอย่าง Northline ที่ใช้ Gridgeist v1.2.0 เป็นระบบปฏิบัติการเดียวกัน โดยมี topology ของเครือข่าย สถานะเที่ยวขนส่งเชิงความหมาย เวลาถึง และ priority exception' width='100%' /></td>
+    <td><img src='docs/assets/northline-after.png' alt='ตัวอย่าง Northline ที่ปรับด้วย Gridgeist fork ของ devmonstr ให้ Display type ได้สัดส่วน พร้อม topology สถานะเที่ยวขนส่ง เวลาถึง และ priority exception' width='100%' /></td>
   </tr>
 </table>
 
-เนื้อหาและข้อมูลปฏิบัติการตัวอย่างเหมือนเดิม แต่ใช้ระบบการออกแบบต่างกัน Gridgeist ทำให้ topology, ตารางเส้นทาง, exception, action และ metrics เชื่อมเป็นพื้นผิวปฏิบัติการเดียวที่สร้างจากหลักฐานของผลิตภัณฑ์ พร้อมระบุชัดว่าเป็น concept ภาพทั้งสองใน README เป็นภาพที่ capture จากหน้าเว็บจริง [เปิดหน้า Before](https://ohmiler.github.io/gridgeist/readme-showcase/?view=before) หรือ [เปิดหน้า After ของ v1.2.0](https://ohmiler.github.io/gridgeist/readme-showcase/?view=after&rev=ab77ceb6)
+เนื้อหาและข้อมูลตัวอย่างเหมือนเดิม แต่ลำดับชั้นได้สัดส่วนขึ้น Fork ยังคงเชื่อม topology,
+ตารางเส้นทาง, exception, action และ metrics เป็นพื้นผิวเดียว พร้อมลดการครอบพื้นที่ของหัวข้อ
+เพื่อให้เห็นบริบทงานจริง ภาพทั้งสอง capture จากหน้าที่เก็บอยู่ใน Repository นี้ ดู
+[Source ของ showcase](site/readme-showcase/index.html) หรือเทียบกับ
+[upstream v1.2.0](https://github.com/ohmiler/gridgeist/tree/v1.2.0)
 
-## v1.2.0 เปลี่ยนอะไรบ้าง
+## Fork ของ devmonstr เปลี่ยนอะไรบ้าง
 
-Gridgeist มองการตัดสินใจด้านภาพเป็นระบบเดียว ไม่ใช่ชุดการตกแต่งที่แยกจากกันทีละส่วน
+Fork ยังคง System-contract workflow ของ upstream และเพิ่มข้อกำหนดที่ชัดขึ้นในจุดที่
+ทิศทางเดิมอาจใช้ Display scale มากเกินไปหรือทำให้ขอบเขตการเรียก Skill กว้างเกินจำเป็น
 
-| ด้าน | พฤติกรรมใน v1.2.0 |
+| ด้าน | พฤติกรรมใน v1.3.0-devmonstr.1 |
 | --- | --- |
-| System contract | กำหนดสี Typography, Layout, Spacing, Shape, Components, States, Media และ Motion เป็นทิศทางย่อชุดเดียวก่อนลงมือ |
-| Semantic roles | เชื่อม Foundation tokens ไปยัง Semantic roles และการตัดสินใจระดับ Component ทำให้ Contrast และความสัมพันธ์ของสถานะมีเจตนาชัดเจน |
-| Component grammar | กำหนด Anatomy, Variants, Density, States และกติกาเมื่อเนื้อหายาวให้ Component ที่เกี่ยวข้อง แทนการแต่งแต่ละจุดแยกกัน |
-| Direction safety | เมื่อแนวคิดภาพยังกว้าง จะเสนอทิศทางที่ต่างกันอย่างชัดเจนและรอให้เลือกก่อนกำหนด Tokens หรือแก้ Interface |
-| Skill coordination | ระบุผู้รับผิดชอบทิศทางเพียงหนึ่งตัวเมื่อใช้หลาย UI Skills เพื่อไม่ให้เกิดระบบภาพที่แข่งขันกัน |
-| Verification | ตรวจหลายความกว้าง, Overflow, Focus, Interaction states, Themes และ Reduced motion พร้อมจำกัดคำกล่าวอ้างตามหลักฐานที่สังเกตได้ |
+| ลำดับชั้นที่ได้สัดส่วน | กำหนดขนาด Display, Page, Section และ Component heading จากหน้าที่ เนื้อหา ภาษา ความยาวบรรทัด และ viewport ไม่ใช่ความเด่นอย่างเดียว |
+| บริบทที่ใช้งานได้ | รักษา Product material หรืองานหลักให้มองเห็นรอบหัวข้อใหญ่ ไม่ปล่อยให้ Title กินพื้นที่ทั้งหน้าจอ |
+| Trigger ที่แม่นขึ้น | เรียก Gridgeist เมื่อ Product หรือ Visual direction อยู่ใน scope จริง โดยไม่เปลี่ยน Bug fix แคบ ๆ ให้กลายเป็นงาน Redesign |
+| ทดสอบสองภาษา | เพิ่ม Scenario ภาษาอังกฤษและไทยสำหรับแก้หัวข้อใหญ่เกินไปโดยไม่ทำลายเอกลักษณ์เดิม |
+| ความต่อเนื่องของระบบ | คง Semantic role, Component grammar, Direction alignment, State coverage และ Evidence boundary จาก upstream |
+| Verification | เพิ่มการตรวจสัดส่วนตัวอักษรควบคู่ Responsive, Overflow, Focus, Interaction, Theme และ Reduced motion |
 
-ผลลัพธ์คือ Interface ที่เป็นเนื้อเดียวกันมากขึ้น ดู Generic น้อยลง และต่อยอดได้ง่ายโดยไม่ทำให้เอกลักษณ์ผลิตภัณฑ์หายไป การทดสอบ v1.2.0 ครอบคลุม System-contract scenarios ภาษาอังกฤษ 3 รอบและภาษาไทย 3 รอบ, การตรวจ Responsive ด้วย Browser แบบอิสระ และ Guardrail tests ที่ซ่อมแล้ว
+Fork ผ่านการตรวจในเครื่อง 11 routes ที่ 4 ขนาด viewport รวม 44 ชุด โดยไม่พบ Overflow,
+Console warning หรือ Heading ที่เกิน threshold ที่บันทึกไว้ ประวัติการทดสอบ v1.2.0
+ยังคงอยู่ในฐานะหลักฐานจาก upstream ส่วน Scenario 20 ใหม่ยังไม่ได้รันใน Agent session แยก
 
 ## เริ่มใช้ใน 60 วินาที
 
 1. ติดตั้ง Gridgeist ผ่านช่องทางหลักของ Agent ที่ใช้งาน
 
-   สำหรับ Codex ให้เพิ่ม Git Marketplace แล้วติดตั้ง Plugin:
+   สำหรับ Fork ปัจจุบัน ใช้ตัวติดตั้งแบบ Universal:
 
    ```powershell
-   codex plugin marketplace add ohmiler/gridgeist
-   codex plugin add gridgeist@gridgeist
+   npx skills add devmonstr/gridgeist -g
    ```
 
-   สำหรับ Claude Code, Cursor, Gemini CLI, GitHub Copilot, OpenCode และ Agent อื่นที่รองรับ ให้ใช้ตัวติดตั้งแบบ Universal:
+   หลังเผยแพร่ Tag `v1.3.0-devmonstr.1` แล้ว Codex จะใช้ Git Marketplace ของ Fork ได้:
 
    ```powershell
-   npx skills add ohmiler/gridgeist -g
+   codex plugin marketplace add devmonstr/gridgeist
+   codex plugin add gridgeist@gridgeist
    ```
 
    **วิธีสำรอง:** หากใช้ตัวติดตั้งทั้งสองแบบไม่ได้ ให้ไปที่ [ติดตั้งด้วยตนเอง](#ติดตั้งด้วยตนเอง)
@@ -118,10 +128,11 @@ Agent ที่รองรับการเรียก Skill แบบตร�
 
 Repository นี้เตรียมเป็น Codex Plugin ผ่าน [`.codex-plugin/plugin.json`](.codex-plugin/plugin.json) โดย Plugin ชี้ไปยังโฟลเดอร์ `skills/gridgeist/` ชุดเดียวกับช่องทางอื่น ทำให้ทุกวิธีติดตั้งใช้แหล่งข้อมูลเดียวกัน
 
-เพิ่ม Gridgeist Marketplace แล้วติดตั้ง Plugin ด้วยคำสั่ง:
+หลังเผยแพร่ Tag `v1.3.0-devmonstr.1` แล้ว ให้เพิ่ม Marketplace ของ Fork
+และติดตั้ง Plugin ด้วยคำสั่ง:
 
 ```powershell
-codex plugin marketplace add ohmiler/gridgeist
+codex plugin marketplace add devmonstr/gridgeist
 codex plugin add gridgeist@gridgeist
 ```
 
@@ -132,13 +143,13 @@ codex plugin add gridgeist@gridgeist
 สำหรับ Claude Code, Cursor, Gemini CLI, GitHub Copilot, OpenCode และ Agent อื่นที่รองรับ ใช้ [open agent skills CLI](https://github.com/vercel-labs/skills) ติดตั้ง Gridgeist ได้ด้วยคำสั่งเดียว:
 
 ```powershell
-npx skills add ohmiler/gridgeist -g
+npx skills add devmonstr/gridgeist -g
 ```
 
 ตัวติดตั้งจะค้นพบ `skills/gridgeist/` และให้เลือก Agent เป้าหมาย หากต้องการระบุ Agent โดยตรง ให้ส่งชื่อ Agent เช่น:
 
 ```powershell
-npx skills add ohmiler/gridgeist -g -a claude-code
+npx skills add devmonstr/gridgeist -g -a claude-code
 ```
 
 ### ติดตั้งด้วยตนเอง
@@ -146,7 +157,7 @@ npx skills add ohmiler/gridgeist -g -a claude-code
 ใช้การคัดลอกด้วยตนเองเมื่อไม่สามารถใช้ Plugin หรือตัวติดตั้งแบบ Universal ได้:
 
 ```powershell
-git clone https://github.com/ohmiler/gridgeist.git
+git clone https://github.com/devmonstr/gridgeist.git
 Copy-Item -Recurse .\gridgeist\skills\gridgeist "$HOME\.agents\skills\gridgeist"
 ```
 
@@ -317,7 +328,11 @@ Gridgeist กำหนด Interface thesis, ลำดับชั้น, ระ�
 - บอกแบรนด์ที่ต้องรักษา เพื่อไม่ให้ Swiss aesthetic กลายเป็น Preset
 - ให้ขนาดหัวข้อสัมพันธ์กับหน้าที่ ความยาว ภาษา และพื้นที่ของงานหลัก ไม่ใช้ตัวอักษรขนาดใหญ่มากเป็นทางลัดเพื่อทำให้หน้าดูโดดเด่น
 
-## กรณีศึกษา
+## กรณีศึกษาจาก Upstream
+
+กรณีศึกษาต่อไปนี้สร้างโดย Miler/ohmiler สำหรับโปรเจกต์ต้นฉบับ และเก็บไว้เป็น
+หลักฐานจาก upstream ไม่ได้อ้างว่า Fork นี้เป็นผู้สร้าง ส่วนหลักฐานเฉพาะของ Fork อยู่ที่
+[`.solodeveling/evidence/`](.solodeveling/evidence/)
 
 [Tracefield](https://ohmiler.github.io/tracefield/) คือ Developer Observability Dashboard ที่ใช้ Gridgeist กับโปรเจกต์จริง โดย [Repository](https://github.com/ohmiler/tracefield) เก็บ Baseline, Prompt ที่ใช้, Rubric ประเมินผล, ชุดทดสอบ และ Final interface ไว้ให้ตรวจสอบได้
 
@@ -327,7 +342,9 @@ Gridgeist กำหนด Interface thesis, ลำดับชั้น, ระ�
 
 [Doodlewood](https://ohmiler.github.io/doodlewood/) ทดสอบ Playful interaction design ด้วยสตูดิโอวาดรูปสำหรับเด็กแบบ Fictional ที่รักษาความเป็นส่วนตัว โดย [Repository](https://github.com/ohmiler/doodlewood) เก็บ Baseline, Prompt แบบตรงตัว, Rubric 6 ด้าน, Drawing engine ที่ทำงานในเครื่อง, การตรวจ 4 ขนาดหน้าจอ และข้อจำกัดด้านความปลอดภัยของเด็กกับหลักฐานจากผู้ใช้จริงไว้อย่างชัดเจน
 
-กรณีศึกษาที่ทีมสร้างเองทั้ง 4 ตัวจึงครอบคลุมพื้นผิวแบบ Data-heavy, Content-heavy, Image-led และ Playful interactive แล้ว ขั้นต่อไปควรเน้นการตรวจจากผู้ใช้ Agent และโปรเจกต์ภายนอก มากกว่าการเพิ่มหมวดภาพที่ทีมสร้างเองอีก
+กรณีศึกษาจาก upstream ทั้ง 4 ตัวครอบคลุมพื้นผิวแบบ Data-heavy, Content-heavy,
+Image-led และ Playful interactive ส่วนขั้นถัดไปของ Fork คือการทดสอบการปรับ
+Proportional hierarchy ข้ามหลายประเภทผลิตภัณฑ์แบบอิสระ
 
 ## ข้อจำกัด
 
