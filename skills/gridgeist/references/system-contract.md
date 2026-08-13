@@ -36,7 +36,7 @@ Use this compact contract in reasoning or handoff when several dimensions change
 | Dimension | Minimum relevant decisions |
 |---|---|
 | Color and themes | Canvas, surface, text, muted, border, accent, destructive, focus, and applicable status roles; foreground/background pairs; light, dark, forced-color, or user-theme behavior when supported |
-| Typography | Display, heading, body, label, metadata, and code roles only when needed; family and fallback, size, weight, line height, tracking, measure, language coverage, and loading behavior |
+| Typography | Display, page title, section heading, component title, body, label, metadata, and code roles only when needed; family and fallback, fluid size range, weight, line height, tracking, measure, language coverage, loading behavior, and the amount of useful content retained around large type |
 | Layout and spacing | Container behavior, tracks, gutters, spacing rhythm, section density, alignment anchors, and transformations across viewport or container ranges |
 | Shape, surface, and depth | Radius, border, shadow, texture, elevation, and adjacency roles; avoid values that differ without a product or state reason |
 | Component grammar | Shared anatomy, variants, sizes or density, state behavior, content limits, composition rules, and narrow-container behavior |
@@ -44,6 +44,31 @@ Use this compact contract in reasoning or handoff when several dimensions change
 
 Do not invent every category for completeness. Omit roles the product does not need,
 but cover every dimension changed by the work.
+
+## Keep typography proportional
+
+Treat type size as one hierarchy tool rather than the default source of visual
+identity.
+
+- Size each role from its task, content length, language, available measure, and
+  relationship to nearby controls or product evidence. A display role is optional;
+  a page title should not inherit display scale automatically.
+- Prefer a compact fluid range with an intentional minimum and maximum. Use weight,
+  family, contrast, position, spacing, and line breaking before adding another size
+  step or increasing the maximum.
+- Reserve monumental type for a short, brand-supported statement or expressive
+  moment. It must not displace the primary tool, critical status, navigation, or the
+  next action without a deliberate product reason.
+- Define wrap and stress behavior for long words, translated text, dynamic titles,
+  narrow containers, landscape mobile, and zoom. Avoid viewport-only sizing that
+  makes headings dominate small screens.
+- Inspect the rendered proportion, not only the token value: heading line count,
+  occupied height, content visible around it, competing focal points, and whether
+  the intended task remains obvious.
+
+Exact values belong to the product contract, not a universal Gridgeist preset. When
+reducing an established display scale, preserve its character through composition,
+weight, tracking, color, rules, and rhythm rather than flattening every role.
 
 ## Use token layers deliberately
 

@@ -47,6 +47,15 @@ Use this checklist after implementation or for a review-only request. Report onl
 - Are type roles limited, consistent, and appropriate to the brand?
 - Is body text comfortable to read at the rendered width?
 - Do headings wrap deliberately at common breakpoints?
+- Is each heading sized for its role, content length, language, and available
+  measure rather than enlarged automatically for visual impact?
+- Does a large title leave the primary task, next action, navigation, status, or
+  authentic product evidence sufficiently visible?
+- At narrow widths, landscape mobile, and zoom, does heading height remain
+  proportional without clipping, crowding, or turning the viewport into a title
+  screen unintentionally?
+- Can position, weight, contrast, rhythm, or spacing carry hierarchy more
+  effectively than the current size difference?
 - Are gaps drawn from a coherent token scale?
 - Are radius, border, shadow, crop, and aspect-ratio choices systematic?
 - Are optical misalignments corrected where mathematical alignment looks wrong?

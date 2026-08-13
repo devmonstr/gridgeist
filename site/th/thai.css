@@ -3,11 +3,11 @@ body { font-family: "Noto Sans Thai", var(--sans); }
 .language-switch { justify-self: end; display: flex; gap: .45rem; align-items: center; font: .65rem var(--mono); }
 .language-switch a { text-decoration: none; color: var(--muted); }
 .language-switch a:hover { color: var(--blue); }
-.thai-hero h1 { font-size: clamp(4rem,10vw,10.5rem); line-height: .86; letter-spacing: -.07em; }
+.thai-hero h1 { max-width: 13ch; font-size: clamp(3.5rem,7.2vw,7rem); line-height: .94; letter-spacing: -.055em; }
 .thai-hero h1 span:last-child { color: var(--blue); }
 .thai-hero .hero-footer p { max-width: 650px; }
 .thai-modes { padding: 8rem var(--page-gutter); display: grid; grid-template-columns: 1fr 1.3fr; gap: 8vw; border-bottom: 1px solid var(--ink); }
-.thai-modes h2,.prompt-guide h2,.thai-prompts h2,.thai-practice h2,.thai-proof h2 { margin: 1.5rem 0 0; font-size: clamp(3rem,6vw,6.5rem); line-height: 1.04; letter-spacing: -.055em; }
+.thai-modes h2,.prompt-guide h2,.thai-prompts h2,.thai-practice h2,.thai-proof h2 { max-width: 16ch; margin: 1.5rem 0 0; font-size: clamp(2.65rem,4.8vw,4.8rem); line-height: 1.08; letter-spacing: -.045em; }
 .thai-adaptation h2 { line-height: 1.05; letter-spacing: -.05em; }
 .thai-adaptation .adaptation-intro > p:last-child,.thai-adaptation .specimen > p { line-height: 1.7; }
 .thai-adaptation .specimen header { letter-spacing: 0; }
@@ -43,11 +43,11 @@ body { font-family: "Noto Sans Thai", var(--sans); }
 @media(max-width:800px){
   .language-switch { grid-column: auto; grid-row: auto; }
   .language-switch a { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
-  .thai-hero h1 { font-size: 19vw; }
+  .thai-hero h1 { font-size: clamp(3rem,12.5vw,4.6rem); }
   .thai-modes,.thai-prompts,.thai-practice { grid-template-columns: 1fr; padding: 5rem 1rem; gap: 4rem; }
   .prompt-guide { padding-inline: 1rem; grid-template-columns: 1fr; }
   .prompt-intro { min-height: 520px; padding: 5rem 0 2rem; }
   .prompt-guide li { padding: 1.5rem 1rem; }
   .prompt-list pre { font-size: .88rem; }
-  .thai-proof h2 { font-size: clamp(2.8rem,12vw,4.8rem); }
+  .thai-proof h2 { font-size: clamp(2.6rem,9.5vw,3.8rem); }
 }

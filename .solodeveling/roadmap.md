@@ -29,15 +29,17 @@ None.
 5. Require Foundation -> Semantic -> Component layering when justified, applicable
    component states, content-stress behavior, preserved routes/content/interactions,
    360 / 768 / 1280 / 1600 px verification, keyboard/focus and reduced-motion
-   checks, zero unintended overflow or console errors, and honest artifact and
-   dependency boundaries.
+   checks, proportional display/page/section/component type roles, useful product
+   context around large headings, zero unintended overflow or console errors, and
+   honest artifact and dependency boundaries.
 6. Preserve raw prompts, responses, diffs, screenshots, run metadata, browser
    results, and a per-dimension score. Treat a spread greater than one rubric level
    on behavior preservation, system cohesion, responsive composition, or state
    coverage as a consistency finding; allow visual composition to vary.
-7. Change the skill only for a severe failure or a pattern reproduced in at least
-   two counted runs. If the skill changes, rerun the failed fixture plus Scenarios
-   12, 14, 15, 18, and 19 before considering v1.2.1.
+7. Evaluate the current local proportional-type candidate rather than adding more
+   guidance speculatively. Run Scenario 20 in fresh English and Thai sessions; if
+   the candidate changes again, rerun the failed fixture plus Scenarios 12, 14, 15,
+   18, 19, and 20 before considering v1.2.1.
 
 ### Success condition
 

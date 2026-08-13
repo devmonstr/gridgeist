@@ -1,6 +1,6 @@
 ---
 name: gridgeist
-description: Use when creating, redesigning, or reviewing web interfaces that need product-specific structure, clear hierarchy, responsive composition, accessible interaction, or relief from generic AI-generated SaaS aesthetics. Adapt grid, typography, imagery, motion, and product evidence to the established brand—including technical, editorial, image-led, warm, playful, and utilitarian directions—across React, Next.js, Tailwind CSS, HTML/CSS, landing pages, dashboards, documentation, portfolios, and interactive tools.
+description: Use when visual or product direction is explicitly requested or clearly in scope for creating, redesigning, or reviewing a web interface. Build product-specific structure, proportional hierarchy, responsive composition, accessible interaction, and relief from generic AI-generated SaaS aesthetics. Adapt grid, typography, imagery, motion, and product evidence to the established brand—including technical, editorial, image-led, warm, playful, and utilitarian directions—across React, Next.js, Tailwind CSS, HTML/CSS, landing pages, dashboards, documentation, portfolios, and interactive tools.
 ---
 
 # Gridgeist
@@ -26,7 +26,7 @@ Let user authorization determine whether files change. Permission to redesign do
    - **Hard stop for provisional broad work** — A provisional direction is not an implementable direction. End the turn after the options, trade-offs, recommendation, and alignment question. Do not set a thesis, read the system contract, create tokens, edit files, start implementation, or verify a redesign until the user selects a direction or explicitly authorizes the recommendation.
 2. **Set a thesis** — Write one governing sentence combining audience, primary task, structural logic, brand expression, and a product-native motif. Read [design-language.md](references/design-language.md) before choosing the direction, especially for image-led, warm, playful, or otherwise nontechnical brands.
 3. **Define the system** — Read [system-contract.md](references/system-contract.md) before making new or changed system decisions. Establish the relevant color, typography, layout, spacing, shape, surface, component, state, media, motion, and responsive rules as one compact contract. Decide whether the grid should be visible, quiet, or invisible. Reuse semantic tokens and existing primitives; keep narrow repairs proportional and do not create a persistent design artifact unless authorized.
-4. **Compose** — Build hierarchy before detail. Make one area dominant, align related content, vary sections within shared logic, and let the most authentic material—product UI, data, prose, imagery, artwork, code, or the primary tool—carry visual weight.
+4. **Compose** — Build hierarchy before detail. Make one area dominant, align related content, vary sections within shared logic, and let the most authentic material—product UI, data, prose, imagery, artwork, code, or the primary tool—carry visual weight. Do not equate dominance with oversized type: size headings from their role, content length, language, available measure, and competition with the primary task. Use position, weight, contrast, rhythm, and space before escalating scale.
 5. **Implement** — Preserve required behavior and states. Follow repository conventions, semantic HTML, keyboard and touch behavior, and existing primitives. Recompose mobile layouts rather than shrinking desktop. Avoid dependencies for simple CSS effects.
 6. **Verify** — Use [review-checklist.md](references/review-checklist.md). Render representative widths and exercise primary flows, states, focus behavior, reduced motion, overflow, and dynamic content. Fix clarity and hierarchy before polish. Report what was observed separately from what remains inferred or untested.
 
@@ -44,18 +44,19 @@ For interactive products, inventory at least default, loading, empty, error, suc
 - Use one thesis and one coherent system.
 - Preserve or deliberately evolve the brand instead of importing a house aesthetic.
 - Build hierarchy through scale, position, density, rhythm, and contrast.
+- Treat monumental display type as an earned exception, not a shortcut to distinctiveness; it must preserve useful content, deliberate wrapping, and the primary task at representative widths.
 - Give grid visibility, borders, radii, shadows, gradients, and motion defined roles.
 - Prefer authentic product evidence; label sample or fictional material and never fabricate proof.
 - Give sections or workflows distinct compositions within shared structural logic.
 
-Repeated rounded cards, centered hero copy, gradient blobs, excessive pills, uniform sections, arbitrary icon boxes, generic claims, and technical chrome on nontechnical brands are diagnostic signals, not automatic violations. Replace weak structure with a stronger product-specific idea.
+Repeated rounded cards, centered hero copy, gradient blobs, excessive pills, uniform sections, arbitrary icon boxes, generic claims, technical chrome on nontechnical brands, and oversized editorial headlines without a content or brand reason are diagnostic signals, not automatic violations. Replace weak structure with a stronger product-specific idea.
 
 ## Decision reference
 
 | Dimension | Decide from |
 |---|---|
 | Structure | Information order, task flow, shared alignments, and the brand's degree of regularity |
-| Type | Brand voice, reading needs, and role hierarchy; reserve mono for genuinely technical content |
+| Type | Brand voice, reading needs, role hierarchy, content length, language, and available measure; reserve mono for genuinely technical content and keep display scale proportional to the task |
 | Visual lead | Product UI, data, prose, imagery, artwork, code, or a primary interactive surface |
 | Shape and surface | Brand geometry, containment, adjacency, state, and interaction—not fashion |
 | Color | Existing brand palette and semantic roles; do not assume neutral plus one accent |
@@ -75,6 +76,7 @@ For user-confirmed or brand-derived Create or Redesign, provide **Direction** wi
 | Copying a reference literally | Extract principles and preserve the user's identity and content |
 | Styling before understanding behavior | Inventory tasks, constraints, and states before composing |
 | Making minimalism empty | Add useful evidence and controlled density |
+| Making every headline monumental | Establish hierarchy with role, position, weight, contrast, and space; enlarge type only when content and composition support it |
 | Styling components one at a time | Define shared anatomy, tokens, variants, and states before polishing instances |
 | Improving the default state only | Design loading, empty, error, success, disabled, and destructive paths |
 | Stacking desktop UI on mobile | Redesign order, density, navigation, media, and interaction |

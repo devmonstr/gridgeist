@@ -1,7 +1,7 @@
 {
   "name": "gridgeist",
   "version": "1.2.0",
-  "description": "Design, redesign, and review distinctive product-native web interfaces with clear structure, brand fidelity, and verified behavior.",
+  "description": "Design, redesign, and review distinctive product-native web interfaces with proportional hierarchy, brand fidelity, and verified behavior.",
   "author": {
     "name": "Miler",
     "url": "https://github.com/ohmiler"
@@ -19,8 +19,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Gridgeist",
-    "shortDescription": "Build product-native interfaces with clear structure.",
-    "longDescription": "Gridgeist helps Codex create, redesign, and review responsive web interfaces by adapting structure, typography, imagery, interaction, and product evidence to the established brand.",
+    "shortDescription": "Build product-native interfaces with proportional hierarchy.",
+    "longDescription": "Gridgeist helps Codex create, redesign, and review responsive web interfaces by adapting structure, proportional typography, imagery, interaction, and product evidence to the established brand.",
     "developerName": "Miler",
     "category": "Developer Tools",
     "capabilities": [

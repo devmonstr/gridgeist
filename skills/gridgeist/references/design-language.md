@@ -55,7 +55,13 @@ When no brand exists, derive expression from audience, task, content, and produc
 
 - Define roles for display, heading, body, label, metadata, and code only when needed.
 - Keep body measure readable, commonly around 45–75 characters.
-- Use weight, spacing, family, and contrast before inventing many sizes.
+- Size headings from role, content length, language, measure, and proximity to the
+  primary task; do not make every page title a display headline.
+- Use weight, spacing, family, contrast, position, and deliberate line breaking
+  before inventing many sizes or escalating scale.
+- Use monumental type only when it is supported by the brand or content and still
+  leaves useful context, navigation, or product evidence visible at representative
+  widths.
 - Use mono for commands, code, IDs, timestamps, or technical labels—not as automatic Gridgeist branding.
 
 ### Imagery and product material

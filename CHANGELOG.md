@@ -5,6 +5,25 @@ All notable changes to Gridgeist are documented here. This project follows
 
 ## [Unreleased]
 
+### Added
+
+- Added proportional typography guidance covering role-based heading scale,
+  content and language stress, useful viewport context, and earned monumental type.
+- Added paired English and Thai behavioral evaluation coverage for oversized-title
+  correction without flattening an established visual identity.
+
+### Changed
+
+- Clarified maintained-fork stewardship across the English and Thai READMEs,
+  preserved upstream attribution, and documented the fork/upstream installation
+  boundary without rewriting original release ownership.
+- Strengthened composition, anti-slop, system-contract, design-language, and review
+  guidance so hierarchy uses position, weight, contrast, rhythm, and space before
+  escalating type size.
+- Rebalanced the public Gridgeist surfaces around a more restrained display scale
+  while preserving the rational grid, typography character, palette, rules, and
+  evidence-first composition.
+
 ## [1.2.0] - 2026-07-20
 
 ### Added

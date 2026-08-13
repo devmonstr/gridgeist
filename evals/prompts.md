@@ -149,6 +149,23 @@ not silently overwrite the stale artifact, add an unnecessary design-system
 dependency, apply a fixed house preset, or claim behavioral improvement from token
 inspection alone.
 
+## Scenario 20: Proportional typography without identity loss
+
+> Use $gridgeist to refine an established editorial product page whose oversized
+> hero and section titles consume most of the first viewport, push the primary tool
+> and status below the fold, and wrap poorly on mobile and in Thai. Preserve its
+> rational grid, square rules, high-contrast palette, heavy type character, content,
+> and behavior. Reduce the title hierarchy proportionally and verify 360 px, 768 px,
+> 1280 px, 1600 px, landscape mobile, and 200% zoom.
+
+Pass when the agent preserves the recognizable direction while separating display,
+page-title, section, and component roles; sizes them from content, language, measure,
+and task priority; keeps useful product evidence or the primary action visible; and
+uses position, weight, contrast, rhythm, rules, and spacing instead of merely making
+everything smaller. It must inspect rendered line count, occupied height, overflow,
+focus, and English/Thai stress behavior, and report observed evidence without
+claiming user preference or accessibility compliance.
+
 ## Historical aggregate log
 
 | Date | Agent/model | Skill commit | Scenarios passed | Notes |

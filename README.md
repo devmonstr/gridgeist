@@ -4,9 +4,47 @@
 
 # Gridgeist
 
-**English** · [ภาษาไทย](README.th.md) · [Website](https://ohmiler.github.io/gridgeist/) · [Examples](https://ohmiler.github.io/gridgeist/examples/)
+**English** · [ภาษาไทย](README.th.md) · [Fork repository](https://github.com/devmonstr/gridgeist) · [Upstream website](https://ohmiler.github.io/gridgeist/) · [Examples](https://ohmiler.github.io/gridgeist/examples/)
 
 Gridgeist is an agent skill for creating, redesigning, and reviewing product-native web interfaces. It adapts structure, typography, imagery, interaction, and product evidence to the established brand, using grids as visible, quiet, or invisible logic. It helps agents move beyond generic AI-generated SaaS patterns while preserving product intent, behavior, responsiveness, and accessibility.
+
+## Maintained fork
+
+This repository is a maintained fork by [devmonstr](https://github.com/devmonstr),
+built on the original [Gridgeist](https://github.com/ohmiler/gridgeist) project by
+[Miler](https://github.com/ohmiler). The upstream authorship, MIT license, release
+history, and original case-study evidence remain credited and intact.
+
+This fork develops Gridgeist further without presenting that upstream work as new
+authorship. Its current direction focuses on proportional typography, tighter skill
+trigger boundaries, bilingual behavioral coverage, and rendered evidence for public
+UI changes. See [NOTICE.md](NOTICE.md) for the concise provenance record.
+
+| Stewardship | Reference |
+| --- | --- |
+| Fork maintainer | [devmonstr](https://github.com/devmonstr) |
+| Original author | [Miler / ohmiler](https://github.com/ohmiler) |
+| Upstream source | [ohmiler/gridgeist](https://github.com/ohmiler/gridgeist) |
+| Maintained fork | [devmonstr/gridgeist](https://github.com/devmonstr/gridgeist) |
+| License | [MIT](LICENSE), with the upstream copyright notice preserved |
+
+### Use the current fork
+
+Install the current fork directly with the Agent Skills CLI:
+
+```powershell
+npx skills add devmonstr/gridgeist -g
+```
+
+Or clone it when you want to inspect, modify, or validate the complete repository:
+
+```powershell
+git clone https://github.com/devmonstr/gridgeist.git
+```
+
+The versioned Codex marketplace commands below intentionally remain the stable
+upstream channel until this fork publishes its own release tag and marketplace
+entry. This avoids presenting an untagged fork branch as a stable release.
 
 ## See the difference
 
@@ -222,6 +260,9 @@ Inspect the repository and rendered interface before taking action.
 Describe outcomes and genuine constraints rather than prescribing a CSS recipe.
 Unless they are established brand requirements, leave font sizes, spacing, radii,
 shadows, and column counts for Gridgeist to derive as one coherent system.
+Gridgeist treats monumental display type as an earned exception: page titles should
+remain proportional to their role, content, language, viewport, and the product
+material or primary task that must stay visible around them.
 
 If a project already contains a `DESIGN.md`, theme, token set, or component
 library, Gridgeist inspects it alongside the implementation and rendered interface
@@ -230,7 +271,9 @@ not a dependency: Gridgeist should not create or update one unless you request a
 portable design-system artifact or explicitly include durable system documentation
 in the work.
 
-Gridgeist also allows implicit invocation when the agent recognizes a matching web-interface task.
+Gridgeist also allows implicit invocation when the agent recognizes that visual or
+product direction is genuinely in scope for a web-interface task; narrow behavioral
+fixes that preserve the current UI should not trigger a redesign workflow.
 
 ## Working with companion skills
 
@@ -316,8 +359,15 @@ Behavioral evaluation prompts are in [`evals/prompts.md`](evals/prompts.md).
 
 ## Contributing
 
-Keep `SKILL.md` concise and place detailed, conditionally loaded guidance in `references/`. For behavior changes, update an evaluation scenario and record what failed before changing the skill. Open an issue or pull request with the motivating prompt and observed output.
+Fork-specific issues and pull requests are welcome at
+[devmonstr/gridgeist](https://github.com/devmonstr/gridgeist). Keep `SKILL.md`
+concise and place detailed, conditionally loaded guidance in `references/`. For
+behavior changes, update an evaluation scenario and record what failed before
+changing the skill. Changes intended for the original project should be proposed to
+[upstream](https://github.com/ohmiler/gridgeist) separately.
 
 ## License
 
-[MIT](LICENSE)
+[MIT](LICENSE). The original copyright notice remains with Miler; fork-specific
+modifications are maintained by devmonstr under the same license. See
+[NOTICE.md](NOTICE.md).

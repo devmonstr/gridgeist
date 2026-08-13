@@ -97,7 +97,7 @@ html[data-view='after'] .version-before { display: none; }
 .before-copy h1 {
   margin: 1.5rem 0;
   color: #202033;
-  font-size: clamp(4rem,6vw,6.5rem);
+  font-size: clamp(3.5rem,5vw,5.25rem);
   line-height: .94;
   letter-spacing: -.065em;
 }
@@ -209,9 +209,9 @@ html[data-view='after'] .version-before { display: none; }
 .after-kicker { margin: 0; font: .62rem var(--mono); text-transform: uppercase; }
 .after-copy h1 {
   margin: auto 0;
-  font-size: clamp(4.4rem,6.8vw,7.6rem);
-  line-height: .78;
-  letter-spacing: -.08em;
+  font-size: clamp(3.75rem,5.5vw,5.75rem);
+  line-height: .84;
+  letter-spacing: -.07em;
 }
 .after-copy h1 span { display: block; transform: translateY(25px); opacity: 0; animation: after-rise .7s cubic-bezier(.2,.7,.1,1) forwards; }
 .after-copy h1 span:last-child { color: var(--blue); animation-delay: .1s; }
@@ -323,13 +323,13 @@ html[data-view='after'] .version-before { display: none; }
   .before-header { padding-inline: 1rem; grid-template-columns: 1fr auto; }
   .before-header nav,.before-actions>a:first-child { display: none; }
   .before-hero { padding: 3rem 1rem; grid-template-columns: 1fr; }
-  .before-copy h1 { font-size: clamp(3.2rem,14vw,5rem); }
+  .before-copy h1 { font-size: clamp(3rem,10.5vw,4.5rem); }
   .before-dashboard { margin-top: 1rem; }
   .after-header { padding-inline: 1rem; grid-template-columns: 1fr auto; }
   .after-header>p,.after-header nav { display: none; }
   .after-hero { padding-inline: 1rem; grid-template-columns: 1fr; }
-  .after-copy { min-height: 620px; padding-right: 0; border-right: 0; border-bottom: 1px solid; }
-  .after-copy h1 { font-size: clamp(3.3rem,15vw,5.5rem); }
+  .after-copy { min-height: 520px; padding-right: 0; border-right: 0; border-bottom: 1px solid; }
+  .after-copy h1 { font-size: clamp(3.25rem,10.5vw,4.75rem); }
   .network-panel { min-height: 660px; }
   .after-metrics { padding-inline: 1rem; grid-template-columns: 1fr 1fr; }
   .after-metrics>div:nth-child(2) { border-right: 0; }
@@ -338,14 +338,14 @@ html[data-view='after'] .version-before { display: none; }
 }
 
 @media(max-width:560px) {
-  .before-copy h1 { font-size: 13.5vw; }
+  .before-copy h1 { font-size: clamp(2.9rem,11vw,4rem); }
   .before-cta { display: grid; }
   .before-dashboard { padding: .65rem; }
   .before-mini-grid { grid-template-columns: 1fr; }
   .before-chart svg { height: 145px; }
   .after-enter { gap: .8rem; }
-  .after-copy { min-height: 540px; }
-  .after-copy h1 { font-size: 13vw; }
+  .after-copy { min-height: 460px; }
+  .after-copy h1 { font-size: clamp(3rem,11.5vw,4.25rem); }
   .network-panel { min-height: 610px; }
   .route-list>div { grid-template-columns: 68px 1fr auto; }
   .route-list>div>b { display: none; }
@@ -430,9 +430,9 @@ html { scroll-behavior: smooth; }
 .after-copy h1 {
   max-width: 520px;
   margin: auto 0;
-  font-size: clamp(4.2rem,5.7vw,6.4rem);
-  line-height: .79;
-  letter-spacing: -.085em;
+  font-size: clamp(3.75rem,4.9vw,5.4rem);
+  line-height: .84;
+  letter-spacing: -.07em;
 }
 .after-copy h1 span:first-child { color: var(--paper); }
 .after-copy h1 span:last-child { color: #6e8cff; }
@@ -519,7 +519,7 @@ html { scroll-behavior: smooth; }
   .after-header { grid-template-columns: 150px 1fr auto; }
   .after-header nav { display: none; }
   .after-hero { grid-template-columns: minmax(340px,.72fr) minmax(540px,1.28fr); }
-  .after-copy h1 { font-size: clamp(3.6rem,6.5vw,5rem); }
+  .after-copy h1 { font-size: clamp(3.4rem,5.5vw,4.5rem); }
   .after-metrics { grid-template-columns: 150px repeat(3,1fr); }
   .after-statement { display: none; }
 }
@@ -529,12 +529,12 @@ html { scroll-behavior: smooth; }
   .after-context { display: none; }
   .after-hero { padding-inline: 1rem; grid-template-columns: 1fr; }
   .after-copy {
-    min-height: 560px;
+    min-height: 500px;
     padding: 1.5rem 0;
     border-bottom: 1px solid var(--ink);
   }
   .after-copy::before { right: -1rem; left: -1rem; width: auto; z-index: -1; }
-  .after-copy h1 { max-width: 620px; font-size: clamp(4rem,13vw,6.8rem); }
+  .after-copy h1 { max-width: 620px; font-size: clamp(3.5rem,10.5vw,5.25rem); }
   .network-panel { min-height: 650px; }
   .after-metrics { padding-inline: 1rem; grid-template-columns: repeat(2,1fr); }
   .after-metrics .metrics-label { min-height: 120px; padding-left: 1.15rem; }
@@ -544,8 +544,8 @@ html { scroll-behavior: smooth; }
 
 @media(max-width:560px) {
   .after-enter { padding-inline: .8rem; }
-  .after-copy { min-height: 500px; }
-  .after-copy h1 { font-size: 13.5vw; }
+  .after-copy { min-height: 460px; }
+  .after-copy h1 { font-size: clamp(3.25rem,11.5vw,4.5rem); }
   .after-intro { grid-template-columns: 1fr; align-items: start; }
   .after-intro a { margin-top: .5rem; }
   .network-panel { min-height: 600px; grid-template-rows: 74px minmax(300px,1fr) auto; }

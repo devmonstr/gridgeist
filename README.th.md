@@ -4,9 +4,46 @@
 
 # Gridgeist — คู่มือภาษาไทย
 
-[English](README.md) · **ภาษาไทย** · [เว็บไซต์](https://ohmiler.github.io/gridgeist/th/) · [ตัวอย่าง](https://ohmiler.github.io/gridgeist/examples/)
+[English](README.md) · **ภาษาไทย** · [Repository ของ Fork](https://github.com/devmonstr/gridgeist) · [เว็บไซต์ต้นฉบับ](https://ohmiler.github.io/gridgeist/th/) · [ตัวอย่าง](https://ohmiler.github.io/gridgeist/examples/)
 
 Gridgeist คือ Agent Skill สำหรับสร้าง ปรับดีไซน์ และรีวิวหน้าเว็บที่มีระบบเฉพาะกับผลิตภัณฑ์ โดยปรับ Structure, Typography, Imagery, Interaction และหลักฐานจากผลิตภัณฑ์ให้เข้ากับแบรนด์ ใช้ Grid เป็นตรรกะที่มองเห็นได้ เบาบาง หรือซ่อนอยู่เบื้องหลัง ช่วยลดหน้าตาแบบ Generic AI SaaS โดยยังรักษาแบรนด์ ฟังก์ชัน Responsive behavior และ Accessibility
+
+## Fork ที่มีผู้ดูแลต่อ
+
+Repository นี้เป็น Fork ที่ดูแลโดย [devmonstr](https://github.com/devmonstr) และพัฒนาต่อจาก
+[Gridgeist ต้นฉบับ](https://github.com/ohmiler/gridgeist) ของ
+[Miler](https://github.com/ohmiler) โดยยังคงเครดิตผู้สร้างเดิม, MIT License,
+ประวัติ Release และหลักฐานจากกรณีศึกษาต้นฉบับไว้อย่างครบถ้วน
+
+Fork นี้พัฒนาต่อโดยไม่อ้างผลงานของ Upstream ว่าเป็นงานที่สร้างขึ้นใหม่ ปัจจุบันเน้น
+Typography ที่ได้สัดส่วน, ขอบเขตการ Trigger Skill ที่แม่นยำขึ้น, ชุดทดสอบพฤติกรรมสองภาษา
+และหลักฐานจากหน้า UI ที่ Render จริง อ่านที่มาแบบย่อได้ใน [NOTICE.md](NOTICE.md)
+
+| การดูแล | อ้างอิง |
+| --- | --- |
+| ผู้ดูแล Fork | [devmonstr](https://github.com/devmonstr) |
+| ผู้สร้างต้นฉบับ | [Miler / ohmiler](https://github.com/ohmiler) |
+| Upstream | [ohmiler/gridgeist](https://github.com/ohmiler/gridgeist) |
+| Fork ที่พัฒนาต่อ | [devmonstr/gridgeist](https://github.com/devmonstr/gridgeist) |
+| License | [MIT](LICENSE) โดยรักษา Copyright notice ของต้นฉบับไว้ |
+
+### ใช้ Fork เวอร์ชันปัจจุบัน
+
+ติดตั้ง Fork ปัจจุบันโดยตรงผ่าน Agent Skills CLI:
+
+```powershell
+npx skills add devmonstr/gridgeist -g
+```
+
+หรือ Clone Repository เมื่อต้องการอ่าน แก้ไข หรือตรวจสอบระบบทั้งหมด:
+
+```powershell
+git clone https://github.com/devmonstr/gridgeist.git
+```
+
+คำสั่ง Codex Marketplace แบบมี Version ด้านล่างยังชี้ไปยัง Stable upstream
+โดยตั้งใจ จนกว่า Fork นี้จะมี Release tag และ Marketplace entry ของตัวเอง
+เพื่อไม่ทำให้ Branch ที่ยังไม่ได้ Tag ดูเหมือน Stable release
 
 ## เห็นความต่างได้ทันที
 
@@ -278,6 +315,7 @@ Gridgeist กำหนด Interface thesis, ลำดับชั้น, ระ�
 - ใช้เนื้อหา ข้อมูล โค้ด หรือ Workflow ของผลิตภัณฑ์จริง
 - ให้ตรวจหลาย Viewport และสถานะ Interaction
 - บอกแบรนด์ที่ต้องรักษา เพื่อไม่ให้ Swiss aesthetic กลายเป็น Preset
+- ให้ขนาดหัวข้อสัมพันธ์กับหน้าที่ ความยาว ภาษา และพื้นที่ของงานหลัก ไม่ใช้ตัวอักษรขนาดใหญ่มากเป็นทางลัดเพื่อทำให้หน้าดูโดดเด่น
 
 ## กรณีศึกษา
 
@@ -320,6 +358,14 @@ python -X utf8 .\scripts\validate_release.py
 python -X utf8 .\scripts\smoke_test_install.py
 ```
 
+## การมีส่วนร่วมและเครดิต
+
+เปิด Issue หรือ Pull request สำหรับงานของ Fork ได้ที่
+[devmonstr/gridgeist](https://github.com/devmonstr/gridgeist) หากต้องการเสนอการเปลี่ยนแปลง
+กลับไปยังโปรเจกต์ต้นฉบับ ควรเปิดข้อเสนอแยกที่
+[Upstream](https://github.com/ohmiler/gridgeist) พร้อม Context และหลักฐานที่เกี่ยวข้อง
+
 ## License
 
-[MIT](LICENSE)
+[MIT](LICENSE) โดย Copyright notice ต้นฉบับยังเป็นของ Miler และส่วนที่พัฒนาต่อใน
+Fork ดูแลโดย devmonstr ภายใต้ License เดียวกัน ดูรายละเอียดใน [NOTICE.md](NOTICE.md)

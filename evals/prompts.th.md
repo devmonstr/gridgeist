@@ -148,6 +148,23 @@ Interaction ที่เป็นตัวแทนจากผล Render จร
 เงียบ ๆ เพิ่ม Design-system dependency ที่ไม่จำเป็น ใช้ House preset ตายตัว หรือ
 อ้างว่า Behavior ดีขึ้นจากการตรวจ Token เพียงอย่างเดียว
 
+## สถานการณ์ 20: Typography ที่ได้สัดส่วนโดยไม่เสียเอกลักษณ์
+
+> ใช้ $gridgeist ปรับหน้า Product แบบ Editorial ที่มีเอกลักษณ์อยู่แล้ว โดย Hero
+> และ Section title ขนาดใหญ่กินพื้นที่เกือบทั้งหมดของ Viewport แรก ดันเครื่องมือหลัก
+> และสถานะลงไปใต้ Fold และตัดบรรทัดไม่ดีบน Mobile กับภาษาไทย รักษา Rational grid,
+> เส้นกรอบเหลี่ยม, Palette ที่มี Contrast สูง, Character ของตัวอักษรหนา, เนื้อหา
+> และ Behavior เดิม ลดลำดับขนาดหัวข้ออย่างได้สัดส่วน แล้วตรวจที่ 360 px, 768 px,
+> 1280 px, 1600 px, Landscape mobile และ Zoom 200%
+
+ผ่านเมื่อ Agent รักษาทิศทางที่จดจำได้ พร้อมแยกบทบาท Display, Page title, Section
+และ Component title; กำหนดขนาดจากเนื้อหา ภาษา Measure และลำดับความสำคัญของงาน;
+ทำให้ Product evidence หรือ Primary action ที่เป็นประโยชน์ยังมองเห็นได้; และใช้
+Position, Weight, Contrast, Rhythm, Rules กับ Spacing แทนการลดทุกอย่างเท่ากัน
+ต้องตรวจจำนวนบรรทัด ความสูงที่ใช้ Overflow, Focus และ Content stress ภาษาอังกฤษ/
+ไทยจากผล Render จริง พร้อมรายงานเฉพาะหลักฐานที่สังเกตได้ โดยไม่อ้าง User
+preference หรือ Accessibility compliance
+
 ## บันทึกผลรวมเดิม
 
 | วันที่ | Agent/Model | Skill commit | ผ่านกี่สถานการณ์ | หมายเหตุ |
