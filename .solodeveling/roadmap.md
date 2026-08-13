@@ -36,7 +36,7 @@ None.
    results, and a per-dimension score. Treat a spread greater than one rubric level
    on behavior preservation, system cohesion, responsive composition, or state
    coverage as a consistency finding; allow visual composition to vary.
-7. Evaluate the current local proportional-type candidate rather than adding more
+7. Evaluate the published proportional-type candidate rather than adding more
    guidance speculatively. Run Scenario 20 in fresh English and Thai sessions; if
    the candidate changes again, rerun the failed fixture plus Scenarios 12, 14, 15,
    18, 19, and 20 before considering v1.2.1.
