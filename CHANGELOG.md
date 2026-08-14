@@ -5,6 +5,12 @@ All notable changes to Gridgeist are documented here. This project follows
 
 ## [Unreleased]
 
+### Changed
+
+- Published the maintained-fork GitHub Pages site and aligned canonical, social,
+  sitemap, robots, version, release-ledger, and bilingual installation surfaces
+  with `devmonstr/gridgeist` while retaining upstream evidence attribution.
+
 ## [1.3.0-devmonstr.1] - 2026-08-13
 
 ### Added

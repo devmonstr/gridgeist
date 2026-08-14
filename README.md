@@ -4,7 +4,7 @@
 
 # Gridgeist
 
-**English** · [ภาษาไทย](README.th.md) · [Fork repository](https://github.com/devmonstr/gridgeist) · [Upstream website](https://ohmiler.github.io/gridgeist/) · [Examples](https://ohmiler.github.io/gridgeist/examples/)
+**English** · [ภาษาไทย](README.th.md) · [Fork website](https://devmonstr.github.io/gridgeist/) · [Examples](https://devmonstr.github.io/gridgeist/examples/) · [Upstream](https://github.com/ohmiler/gridgeist)
 
 Gridgeist is an agent skill for creating, redesigning, and reviewing product-native web interfaces. It adapts structure, typography, imagery, interaction, and product evidence to the established brand, using grids as visible, quiet, or invisible logic. It helps agents move beyond generic AI-generated SaaS patterns while preserving product intent, behavior, responsiveness, and accessibility.
 
@@ -42,10 +42,9 @@ Or clone it when you want to inspect, modify, or validate the complete repositor
 git clone https://github.com/devmonstr/gridgeist.git
 ```
 
-The fork is preparing **v1.3.0-devmonstr.1**, based on upstream v1.2.0. The
-universal installer uses the current fork directly. The Codex marketplace entry
-becomes installable when the matching fork tag is published; until then, use the
-universal or manual path below.
+The current fork prerelease is **v1.3.0-devmonstr.1**, based on upstream v1.2.0.
+Its tag, GitHub prerelease, Codex marketplace path, universal installer, and
+[fork website](https://devmonstr.github.io/gridgeist/) are published and verified.
 
 ## See the difference
 
@@ -103,7 +102,7 @@ has not yet been run in isolated agent sessions.
    npx skills add devmonstr/gridgeist -g
    ```
 
-   After the `v1.3.0-devmonstr.1` tag is published, Codex can use the fork's Git marketplace:
+   Codex can use the fork's verified Git marketplace:
 
    ```powershell
    codex plugin marketplace add devmonstr/gridgeist
@@ -132,8 +131,7 @@ Agents that support explicit skill invocation can use `$gridgeist` in the prompt
 
 This repository is packaged as a Codex plugin through [`.codex-plugin/plugin.json`](.codex-plugin/plugin.json). The plugin points to the same `skills/gridgeist/` directory used by the other channels, so all installations share one source of truth.
 
-After the `v1.3.0-devmonstr.1` tag is published, add the fork marketplace and
-install the plugin:
+Add the verified fork marketplace and install the plugin:
 
 ```powershell
 codex plugin marketplace add devmonstr/gridgeist

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ohmiler.github.io/gridgeist/sitemap.xml
+Sitemap: https://devmonstr.github.io/gridgeist/sitemap.xml

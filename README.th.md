@@ -4,7 +4,7 @@
 
 # Gridgeist — คู่มือภาษาไทย
 
-[English](README.md) · **ภาษาไทย** · [Repository ของ Fork](https://github.com/devmonstr/gridgeist) · [เว็บไซต์ต้นฉบับ](https://ohmiler.github.io/gridgeist/th/) · [ตัวอย่าง](https://ohmiler.github.io/gridgeist/examples/)
+[English](README.md) · **ภาษาไทย** · [เว็บไซต์ของ Fork](https://devmonstr.github.io/gridgeist/th/) · [ตัวอย่าง](https://devmonstr.github.io/gridgeist/examples/) · [Upstream](https://github.com/ohmiler/gridgeist)
 
 Gridgeist คือ Agent Skill สำหรับสร้าง ปรับดีไซน์ และรีวิวหน้าเว็บที่มีระบบเฉพาะกับผลิตภัณฑ์ โดยปรับ Structure, Typography, Imagery, Interaction และหลักฐานจากผลิตภัณฑ์ให้เข้ากับแบรนด์ ใช้ Grid เป็นตรรกะที่มองเห็นได้ เบาบาง หรือซ่อนอยู่เบื้องหลัง ช่วยลดหน้าตาแบบ Generic AI SaaS โดยยังรักษาแบรนด์ ฟังก์ชัน Responsive behavior และ Accessibility
 
@@ -41,9 +41,9 @@ npx skills add devmonstr/gridgeist -g
 git clone https://github.com/devmonstr/gridgeist.git
 ```
 
-Fork กำลังเตรียม **v1.3.0-devmonstr.1** ซึ่งต่อยอดจาก upstream v1.2.0
-ตัวติดตั้งแบบ Universal ใช้ Fork ปัจจุบันได้โดยตรง ส่วน Codex Marketplace จะติดตั้งได้
-เมื่อเผยแพร่ Tag ของ Fork ที่ตรงกัน ก่อนถึงจุดนั้นให้ใช้ Universal หรือ Manual path ด้านล่าง
+Fork prerelease ปัจจุบันคือ **v1.3.0-devmonstr.1** ซึ่งต่อยอดจาก upstream v1.2.0
+โดย Tag, GitHub prerelease, Codex Marketplace, Universal installer และ
+[เว็บไซต์ของ Fork](https://devmonstr.github.io/gridgeist/th/) ถูกเผยแพร่และตรวจสอบแล้ว
 
 ## เห็นความต่างได้ทันที
 
@@ -97,7 +97,7 @@ Console warning หรือ Heading ที่เกิน threshold ที่�
    npx skills add devmonstr/gridgeist -g
    ```
 
-   หลังเผยแพร่ Tag `v1.3.0-devmonstr.1` แล้ว Codex จะใช้ Git Marketplace ของ Fork ได้:
+   Codex ใช้ Git Marketplace ของ Fork ที่ผ่านการตรวจสอบแล้วได้ทันที:
 
    ```powershell
    codex plugin marketplace add devmonstr/gridgeist
@@ -128,8 +128,7 @@ Agent ที่รองรับการเรียก Skill แบบตร�
 
 Repository นี้เตรียมเป็น Codex Plugin ผ่าน [`.codex-plugin/plugin.json`](.codex-plugin/plugin.json) โดย Plugin ชี้ไปยังโฟลเดอร์ `skills/gridgeist/` ชุดเดียวกับช่องทางอื่น ทำให้ทุกวิธีติดตั้งใช้แหล่งข้อมูลเดียวกัน
 
-หลังเผยแพร่ Tag `v1.3.0-devmonstr.1` แล้ว ให้เพิ่ม Marketplace ของ Fork
-และติดตั้ง Plugin ด้วยคำสั่ง:
+เพิ่ม Marketplace ของ Fork ที่ผ่านการตรวจสอบแล้วและติดตั้ง Plugin ด้วยคำสั่ง:
 
 ```powershell
 codex plugin marketplace add devmonstr/gridgeist
