@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Three live interface studies showing how the Gridgeist v1.2 system adapts to different products." />
+    <meta name="description" content="Three live comparisons showing interfaces without a design skill and after applying the devmonstr Gridgeist skill." />
     <title>Examples — Gridgeist</title>
     <link rel="canonical" href="https://devmonstr.github.io/gridgeist/examples/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Gridgeist" />
-    <meta property="og:title" content="Gridgeist Examples — Three systems, one method" />
-    <meta property="og:description" content="Three live Before/After interface studies built with Gridgeist." />
+    <meta property="og:title" content="Gridgeist Examples — Without the skill / With Gridgeist" />
+    <meta property="og:description" content="Three live product-interface comparisons built with the devmonstr Gridgeist fork." />
     <meta property="og:url" content="https://devmonstr.github.io/gridgeist/examples/" />
     <meta property="og:image" content="https://devmonstr.github.io/gridgeist/og-image.png" />
     <meta property="og:image:width" content="1200" />
@@ -17,8 +17,8 @@
     <meta property="og:image:alt" content="Gridgeist — Structure with spirit on a precise cobalt grid" />
     <meta property="og:locale" content="en_US" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Gridgeist Examples — Three systems, one method" />
-    <meta name="twitter:description" content="Three live Before/After interface studies built with Gridgeist." />
+    <meta name="twitter:title" content="Gridgeist Examples — Without the skill / With Gridgeist" />
+    <meta name="twitter:description" content="Three live product-interface comparisons built with the devmonstr Gridgeist fork." />
     <meta name="twitter:image" content="https://devmonstr.github.io/gridgeist/og-image.png" />
     <link rel="icon" href="../favicon.ico" sizes="any" />
     <link rel="stylesheet" href="../styles.css" />
@@ -36,53 +36,58 @@
 
     <main id="main">
       <section class="gallery-hero">
-        <p class="eyebrow">Field studies / v1.2 / 001—003</p>
-        <h1><span>THREE</span><span>SYSTEMS.</span></h1>
-        <div class="gallery-intro"><p>Three upstream specimens retained as historical evidence. Every specimen is live HTML and CSS—not a dressed-up screenshot.</p><span class="version-mark">UPSTREAM V1.2 FIELD SET</span></div>
+        <p class="eyebrow">Comparison lab / devmonstr fork / 001—003</p>
+        <h1><span>SKILL</span><span>IN PRACTICE.</span></h1>
+        <div class="gallery-intro"><p>Three illustrative products, each shown twice: a generic baseline without a design skill and a product-native interface created with Gridgeist.</p><span class="version-mark">GRIDGEIST 1.3.0-DEVMONSTR.1</span></div>
+        <div class="gallery-switch" role="group" aria-label="Change every comparison">
+          <span>Show every example</span>
+          <button data-gallery-view="before" aria-pressed="true">Without skill</button>
+          <button data-gallery-view="after" aria-pressed="false">With Gridgeist</button>
+        </div>
       </section>
 
-      <aside class="gallery-contract" aria-label="System contract shared by all specimens"><span>SAME CONTRACT</span><b>Brand-derived direction</b><b>Product-native evidence</b><b>Responsive state grammar</b></aside>
+      <aside class="gallery-contract" aria-label="Gridgeist contract shared by all examples"><span>FORK CONTRACT</span><b>Proportional hierarchy</b><b>Product-native evidence</b><b>Responsive state grammar</b></aside>
 
       <nav class="specimen-index" aria-label="Example index">
-        <a href="#observability"><span>01</span><strong>Tracefield</strong><small>Developer observability</small></a>
-        <a href="#operations"><span>02</span><strong>Northline</strong><small>Operations dashboard</small></a>
-        <a href="#learning"><span>03</span><strong>Syntax</strong><small>Learning workspace</small></a>
+        <a href="#observability"><span>01</span><strong>Tracefield</strong><small>Generic promise → incident evidence</small></a>
+        <a href="#operations"><span>02</span><strong>Northline</strong><small>Card mosaic → operational priority</small></a>
+        <a href="#learning"><span>03</span><strong>Syntax</strong><small>Course marketing → lesson workspace</small></a>
       </nav>
 
       <article class="case reveal" id="observability">
-        <header class="case-head"><div><p>SPECIMEN 01 / DEVELOPER TOOL</p><h2>Tracefield</h2></div><p class="case-thesis">“A live incident record where traces—not claims—build trust.”</p></header>
-        <div class="case-controls" role="group" aria-label="Tracefield view"><button data-case="trace" data-view="before" aria-pressed="true">Before</button><button data-case="trace" data-view="after" aria-pressed="false">After</button></div>
+        <header class="case-head"><div><p>COMPARISON 01 / DEVELOPER TOOL</p><h2>Tracefield</h2></div><p class="case-thesis">For engineers diagnosing latency: a compressed trace relationship makes the incident—not a marketing promise—the dominant evidence.</p></header>
+        <div class="case-controls" role="group" aria-label="Tracefield comparison"><output data-case-status="trace" aria-live="polite">Viewing: without skill</output><button data-case="trace" data-view="before" aria-pressed="true">Without skill</button><button data-case="trace" data-view="after" aria-pressed="false">With Gridgeist</button></div>
         <div class="stage trace-stage" data-case-stage="trace" data-state="before">
-          <section class="generic-before"><span class="generic-pill">AI-POWERED OBSERVABILITY</span><h3>Ship faster.<br />Sleep better.</h3><p>One platform for all your monitoring needs.</p><div class="generic-row"><i></i><i></i><i></i></div></section>
-          <section class="trace-after"><aside><b>TRACEFIELD</b><nav><span>Overview</span><span class="active">Live traces</span><span>Services</span><span>Alerts</span></nav><small>US-EAST / HEALTHY</small></aside><div class="trace-work"><header><span>INCIDENT / PAYMENTS-API</span><b>P95 482ms</b></header><div class="waterfall"><span style="--w:88%;--d:0%">gateway.request <em>482ms</em></span><span style="--w:67%;--d:8%">auth.verify <em>326ms</em></span><span style="--w:31%;--d:24%">postgres.query <em>151ms</em></span><span style="--w:16%;--d:55%">stripe.charge <em>78ms</em></span></div><footer><strong>1,842</strong><span>traces sampled<br />last 15 minutes</span><code>trace_id 8f2a—91de</code></footer></div></section>
+          <section class="generic-before" aria-label="Tracefield without a design skill"><span class="surface-label">WITHOUT SKILL / ILLUSTRATIVE BASELINE</span><span class="generic-pill">AI-POWERED OBSERVABILITY</span><h3>Ship faster.<br />Sleep better.</h3><p>One platform for all your monitoring needs.</p><div class="generic-row" aria-hidden="true"><i></i><i></i><i></i></div></section>
+          <section class="trace-after" aria-label="Tracefield with Gridgeist"><aside><span class="surface-label surface-label-dark">WITH GRIDGEIST / SAMPLE DATA</span><b>TRACEFIELD</b><nav><span>Overview</span><span class="active">Live traces</span><span>Services</span><span>Alerts</span></nav><small><i></i> US-EAST / HEALTHY</small></aside><div class="trace-work"><header><span>INCIDENT / PAYMENTS-API / SEV-2</span><b>P95 482ms</b></header><div class="waterfall"><span style="--w:88%;--d:0%">gateway.request <em>482ms</em></span><span style="--w:67%;--d:8%">auth.verify <em>326ms</em></span><span style="--w:31%;--d:24%">postgres.query <em>151ms</em></span><span style="--w:16%;--d:55%">stripe.charge <em>78ms</em></span></div><footer><strong>1,842</strong><span>sampled traces<br />last 15 minutes</span><code>trace_id 8f2a—91de</code></footer></div></section>
         </div>
-        <footer class="case-notes"><div><span>Structural influence</span><b>Utilitarian grid</b></div><div><span>Product-native motif</span><b>Trace waterfall</b></div><div><span>Removed</span><b>Claims without evidence</b></div></footer>
+        <footer class="case-notes"><div><span>Without skill</span><b>Promise-led landing page</b></div><div><span>With Gridgeist</span><b>Incident-led workspace</b></div><div><span>Product evidence</span><b>Trace waterfall + latency</b></div><div><span>Structure</span><b>Visible relationship grid</b></div></footer>
       </article>
 
       <article class="case reveal" id="operations">
-        <header class="case-head"><div><p>SPECIMEN 02 / OPERATIONS</p><h2>Northline</h2></div><p class="case-thesis">“A calm control surface ordered by operational urgency.”</p></header>
-        <div class="case-controls" role="group" aria-label="Northline view"><button data-case="ops" data-view="before" aria-pressed="true">Before</button><button data-case="ops" data-view="after" aria-pressed="false">After</button></div>
+        <header class="case-head"><div><p>COMPARISON 02 / OPERATIONS</p><h2>Northline</h2></div><p class="case-thesis">For dispatch teams deciding what needs attention now: a calm operating grid ranks exceptions, route state, and arrival time before decoration.</p></header>
+        <div class="case-controls" role="group" aria-label="Northline comparison"><output data-case-status="ops" aria-live="polite">Viewing: without skill</output><button data-case="ops" data-view="before" aria-pressed="true">Without skill</button><button data-case="ops" data-view="after" aria-pressed="false">With Gridgeist</button></div>
         <div class="stage ops-stage" data-case-stage="ops" data-state="before">
-          <section class="generic-before generic-dashboard"><h3>Welcome back, Alex 👋</h3><p>Here's what's happening with your business today.</p><div class="dashboard-cards"><i></i><i></i><i></i><i></i><i></i><i></i></div></section>
-          <section class="ops-after"><header><b>NORTHLINE / OPS</b><nav>Network &nbsp; Fleet &nbsp; Incidents</nav><span>14:32 UTC</span></header><div class="ops-summary"><div><small>ACTIVE ROUTES</small><strong>148</strong><em>+12 today</em></div><div><small>ON-TIME</small><strong>96.4%</strong><em>target 95%</em></div><div class="attention"><small>NEEDS ATTENTION</small><strong>03</strong><em>2 high priority</em></div></div><div class="ops-table"><div class="table-head"><span>ROUTE</span><span>STATUS</span><span>ETA</span><span>LOAD</span></div><div><b>NL—2048</b><span class="status late">DELAYED</span><span>14:58</span><span>82%</span></div><div><b>NL—1831</b><span class="status">ON TIME</span><span>15:06</span><span>64%</span></div><div><b>NL—2190</b><span class="status">ON TIME</span><span>15:21</span><span>91%</span></div></div></section>
+          <section class="generic-before generic-dashboard" aria-label="Northline without a design skill"><span class="surface-label">WITHOUT SKILL / ILLUSTRATIVE BASELINE</span><h3>Welcome back, Alex 👋</h3><p>Here's what's happening with your business today.</p><div class="dashboard-cards" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div></section>
+          <section class="ops-after" aria-label="Northline with Gridgeist"><span class="surface-label">WITH GRIDGEIST / FICTIONAL OPERATING DATA</span><header><b>NORTHLINE / CONTROL</b><nav>Network &nbsp; Fleet &nbsp; Exceptions</nav><span><i></i> LIVE / 14:32 UTC</span></header><div class="ops-summary"><div><small>ACTIVE ROUTES</small><strong>148</strong><em>+12 today</em></div><div><small>ON-TIME</small><strong>96.4%</strong><em>target 95%</em></div><div class="attention"><small>NEEDS ATTENTION</small><strong>03</strong><em>2 high priority</em></div></div><div class="ops-table"><div class="table-head"><span>ROUTE</span><span>STATE</span><span>ETA</span><span>LOAD</span></div><div class="priority-row"><b>NL—2048</b><span class="status late">DELAYED</span><span>14:58</span><span>82%</span></div><div><b>NL—1831</b><span class="status">ON TIME</span><span>15:06</span><span>64%</span></div><div><b>NL—2190</b><span class="status">ON TIME</span><span>15:21</span><span>91%</span></div></div></section>
         </div>
-        <footer class="case-notes"><div><span>Structural influence</span><b>Operational hierarchy</b></div><div><span>Product-native motif</span><b>Route status table</b></div><div><span>Removed</span><b>Dashboard-card mosaic</b></div></footer>
+        <footer class="case-notes"><div><span>Without skill</span><b>Equal-weight card mosaic</b></div><div><span>With Gridgeist</span><b>Exception-led control surface</b></div><div><span>Product evidence</span><b>Route state + ETA</b></div><div><span>Structure</span><b>Priority-ordered grid</b></div></footer>
       </article>
 
       <article class="case reveal" id="learning">
-        <header class="case-head"><div><p>SPECIMEN 03 / LEARNING</p><h2>Syntax</h2></div><p class="case-thesis">“A lesson becomes the interface; progress becomes the rhythm.”</p></header>
-        <div class="case-controls" role="group" aria-label="Syntax view"><button data-case="learn" data-view="before" aria-pressed="true">Before</button><button data-case="learn" data-view="after" aria-pressed="false">After</button></div>
+        <header class="case-head"><div><p>COMPARISON 03 / LEARNING</p><h2>Syntax</h2></div><p class="case-thesis">For learners completing one exercise at a time: lesson sequence, code, and progress establish a warm editorial rhythm without turning the workspace into marketing.</p></header>
+        <div class="case-controls" role="group" aria-label="Syntax comparison"><output data-case-status="learn" aria-live="polite">Viewing: without skill</output><button data-case="learn" data-view="before" aria-pressed="true">Without skill</button><button data-case="learn" data-view="after" aria-pressed="false">With Gridgeist</button></div>
         <div class="stage learn-stage" data-case-stage="learn" data-state="before">
-          <section class="generic-before generic-course"><span class="generic-pill">MOST POPULAR COURSE</span><h3>Become a coding<br />superstar today.</h3><p>Learn at your own pace with expert-led content.</p><button>Start learning →</button></section>
-          <section class="learn-after"><aside><b>SYNTAX_</b><span>MODULE 02 / 06</span><ol><li class="done">01 Variables</li><li class="active">02 Functions</li><li>03 Objects</li><li>04 Async</li></ol><small>PROGRESS 38%</small></aside><div class="lesson"><header><span>02.04</span><span>12 MIN</span></header><h3>Functions as<br />small machines.</h3><pre><code><i>const</i> transform = (input) =&gt; {
+          <section class="generic-before generic-course" aria-label="Syntax without a design skill"><span class="surface-label">WITHOUT SKILL / ILLUSTRATIVE BASELINE</span><span class="generic-pill">MOST POPULAR COURSE</span><h3>Become a coding<br />superstar today.</h3><p>Learn at your own pace with expert-led content.</p><button type="button">Start learning →</button></section>
+          <section class="learn-after" aria-label="Syntax with Gridgeist"><aside><span class="surface-label">WITH GRIDGEIST / SAMPLE LESSON</span><b>SYNTAX_</b><span>MODULE 02 / 06</span><ol><li class="done">01 Variables <small>Complete</small></li><li class="active">02 Functions <small>Current</small></li><li>03 Objects</li><li>04 Async</li></ol><small>PROGRESS 38%</small></aside><div class="lesson"><header><span>02.04 / TRANSFORM</span><span>12 MIN</span></header><h3>Functions as<br />small machines.</h3><pre><code><i>const</i> transform = (input) =&gt; {
   <b>return</b> input.map(normalize);
 };</code></pre><footer><span>← Previous</span><b>Run exercise →</b></footer></div></section>
         </div>
-        <footer class="case-notes"><div><span>Structural influence</span><b>Editorial pacing</b></div><div><span>Product-native motif</span><b>Lesson + code</b></div><div><span>Removed</span><b>Interchangeable promise</b></div></footer>
+        <footer class="case-notes"><div><span>Without skill</span><b>Course-marketing promise</b></div><div><span>With Gridgeist</span><b>Exercise-led workspace</b></div><div><span>Product evidence</span><b>Lesson + code + progress</b></div><div><span>Structure</span><b>Quiet editorial sequence</b></div></footer>
       </article>
 
-      <section class="gallery-cta reveal"><p>THE METHOD SURVIVES<br />THE CHANGE OF SUBJECT.</p><h2>Build the next<br />specimen.</h2><a class="button button-light" href="../#install">Install Gridgeist <span>↗</span></a></section>
+      <section class="gallery-cta reveal"><p>ONE SKILL / THREE PRODUCT LANGUAGES</p><h2>Structure the product.<br />Keep its spirit.</h2><div><a class="button button-light" href="../#install">Install Gridgeist <span>↗</span></a><a class="gallery-doc-link" href="../docs/">Read the method</a></div></section>
     </main>
-    <footer><a class="wordmark" href="../">GRIDGEIST®</a><p>Upstream field studies / v1.2 / 001—003</p><p>Original © 2026 Miler / MIT</p></footer>
+    <footer><a class="wordmark" href="../">GRIDGEIST®</a><p>Illustrative comparison lab / devmonstr fork</p><p>Original © 2026 Miler / MIT</p></footer>
   </body>
 </html>

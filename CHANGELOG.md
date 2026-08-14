@@ -7,6 +7,10 @@ All notable changes to Gridgeist are documented here. This project follows
 
 ### Changed
 
+- Rebuilt the complete Examples comparison lab around the installed devmonstr
+  Gridgeist skill, with explicit without-skill baselines, fork-owned results,
+  global and per-example state controls, proportional headings, and honest sample
+  data labels across Tracefield, Northline, and Syntax.
 - Published the maintained-fork GitHub Pages site and aligned canonical, social,
   sitemap, robots, version, release-ledger, and bilingual installation surfaces
   with `devmonstr/gridgeist` while retaining upstream evidence attribution.

@@ -58,3 +58,6 @@ or delivery harness. Otherwise keep v1.2 stable and publish only the evidence.
    automated validation, behavioral evidence, and verified Codex / Agent Skills
    update paths.
 4. Refreshed and production-verified the bilingual main site and Docs.
+5. Rebuilt the fork-owned Examples comparison lab so Tracefield, Northline, and
+   Syntax each contrast a generic no-skill baseline with a product-native result
+   created from the devmonstr Gridgeist contract.
