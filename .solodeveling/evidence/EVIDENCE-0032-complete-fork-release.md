@@ -46,4 +46,3 @@ date: 2026-08-14
 - `v1.3.0-devmonstr.1` remains a prerelease by design, not a stable release.
 - Scenario 20 has not been rerun in isolated fresh-agent sessions.
 - Real 200% browser zoom remains unverified.
-

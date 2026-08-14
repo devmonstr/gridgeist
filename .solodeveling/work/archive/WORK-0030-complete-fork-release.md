@@ -28,4 +28,3 @@ commit, push, tagging, release publication, and deployment.
 - Production site commit: `e23c529effc2f8a01dcbcc540c2d941bcef474f7`
 - Release: `https://github.com/devmonstr/gridgeist/releases/tag/v1.3.0-devmonstr.1`
 - Site: `https://devmonstr.github.io/gridgeist/`
-
