@@ -4,9 +4,9 @@ solodeveling_schema: 1
 
 # State
 
-- **Goal:** Publish a clearly identified devmonstr release line while preserving upstream authorship, history, and evidence boundaries.
-- **Progress:** Commit `f5c9845` publishes release candidate `1.3.0-devmonstr.1`, based on upstream v1.2.0, to `devmonstr/gridgeist` on `main`. README content from the comparison onward, plugin and marketplace metadata, installation paths, current public-site surfaces, and the Northline After capture now belong to the fork while inherited case studies are labeled as upstream evidence. Browser QA passed for the showcase interaction and English/Thai Docs at 1440×900 and 360×800 with no horizontal overflow or console warnings/errors. Local Git, the remote branch, and the GitHub API reported the same feature commit SHA after push.
+- **Goal:** Maintain a complete, clearly identified devmonstr release line while preserving upstream authorship, history, and evidence boundaries.
+- **Progress:** Prerelease `v1.3.0-devmonstr.1` is published from tag target `06bc642`, with validation and clean install/update smoke tests passing. Commit `e23c529` completes fork-owned README, release, canonical, social, sitemap, bilingual documentation, Updates, Northline, and GitHub Pages surfaces. Production QA passed at 1440×900 and 360×800 with no horizontal overflow or application-origin warnings/errors. The repository About homepage now points to `https://devmonstr.github.io/gridgeist/`.
 - **Active work:** None.
 - **Blockers:** None.
-- **Current risks:** Fresh-agent behavior remains nondeterministic; Scenario 20 has not run in isolated sessions; real 200% browser zoom was not verified; the `v1.3.0-devmonstr.1` tag does not exist remotely, so the fork Codex marketplace path and live install smoke test are not yet available; no tag, site deployment, or production browser verification has been performed for this candidate.
-- **Next action:** Create and verify the matching fork tag when explicitly authorized, then run the live marketplace smoke test before claiming the Codex marketplace channel works.
+- **Current risks:** Fresh-agent behavior remains nondeterministic; Scenario 20 has not run in isolated sessions; real 200% browser zoom was not verified; this version is intentionally a prerelease rather than a stable release.
+- **Next action:** Collect prerelease feedback and promote a separately validated stable version only when explicitly authorized.
