@@ -1,0 +1,4 @@
+interface:
+  display_name: "Gridgeist + shadcn Next.js"
+  short_description: "Product-native Next.js UI direction with shadcn/ui primitives"
+  brand_color: "#1547FF"
